@@ -10,8 +10,11 @@
         .then(res=>(res.json()))
         .then((data)=>{
             data.forEach(element => {
-                if(element.name.split(".").pop() === ".md")
-                    document.querySelector("#holder").innerHTML=`<a href="https://webcon-2023.github.io/WebCon-2023/Introduction%20to%20web%20and%20Github/Task%20%231/${element.name}">${element.name.split('.').slice(0, -1).join('.')}</a>`
+                console.log(element);
+                if(element.name.split(".").pop() ){
+                    console.log(element.name)
+                    document.querySelector("#holder").innerHTML=`<a href="https://webcon-2023.github.io/WebCon-2023/Introduction%20to%20web%20and%20Github/Task%20%231/${element.name.split('.').slice(0, -1).join('.')}">${element.name.split('.').slice(0, -1).join('.')}</a>`
+                }
             });
         })
     </script>
