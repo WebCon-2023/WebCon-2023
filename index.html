@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebCon Portfolios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
     <script defer>
         fetch("https://api.github.com/repos/WebCon-2023/WebCon-2023/contents/Introduction%20to%20web%20and%20Github/Task%20%231")
         .then(res=>(res.json()))
@@ -13,15 +14,15 @@
                 console.log(element);
                 if(element.name.split(".").pop() ){
                     console.log(element.name)
-                    document.querySelector("#holder").innerHTML=`<a href="https://webcon-2023.github.io/WebCon-2023/Introduction%20to%20web%20and%20Github/Task%20%231/${element.name.split('.').slice(0, -1).join('.')}">${element.name.split('.').slice(0, -1).join('.')}</a>`
+                    document.querySelector("#holder").innerHTML=`<a style="font-size:3rem;margin:0 auto;" href="https://webcon-2023.github.io/WebCon-2023/Introduction%20to%20web%20and%20Github/Task%20%231/${element.name.split('.').slice(0, -1).join('.')}"><strong>${element.name.split('.').slice(0, -1).join('.')}</strong></a>`
                 }
             });
         })
     </script>
 </head>
 <body>
-    <div class="" id="holder">
+    <main style="display:flex;flex-direction: column;" id="holder">
 
-    </div>
+    </main>
 </body>
 </html>
