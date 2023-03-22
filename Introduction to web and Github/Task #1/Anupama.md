@@ -1,4 +1,4 @@
-# i am amupama prasanth
+# i am anupama prasanth
 
 ## third year student
 
