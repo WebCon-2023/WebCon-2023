@@ -1,3 +1,4 @@
-<h1 align="center">Hi 👋, I'm Nikhil N</h1>
+<h1 align="center"> Nikhil N</h1>
 <p>
-<h3>📖 I’m currently Studying Electronics and communication engineering at <b><i>College of Engineering Chengannur</i></b></h3>
+<h3 align="center">2nd year Electronics and communication engineering</h3>
+<h3 align="center"><b>College of Engineering Chengannur</b></h3>
