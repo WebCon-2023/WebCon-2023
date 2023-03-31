@@ -33,30 +33,65 @@
         <hr>
         <h2>Fill out the form for application</h2>
         <form>
-            <label >First Name:</label>
-            <input type="text"><br><br>
-            <label >Last Name:</label>
-            <input type="text"><br><br>
-            <label >Age:</label>
-            <input type="text"><br><br>
-            <label >Gender:</label>
-            <input type="text"><br><br>
-            <label >Address:</label>
-            <input type="text"><br><br>
-            <label >Language Proficiency:</label><!-- Editing-->
-            <input type="tel"><br><br>
-            <p>Known Programmign Languages:</p4>
-            <ul>
-                <li><label>Python</label>
-                <input type="checkbox"></li>
-                <li>
-                    <label>Java</label>
-                    <Input type="checkbox">
-                </li>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label >First Name:</label>
+                <input type="text"><br><br>
+                <label >Last Name:</label>
+                <input type="text"><br><br>
+                <label >Age:</label>
+                <input type="text"><br><br>
+                <label >Gender:</label>
+                <input type="text"><br><br>
+                <label >Address:</label>
+                <input type="text"><br><br>
+                <label >Language Proficiency:</label>
+                <select>
+                    <option>English</option>
+                    <option>Malayalam</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                    <option>Russian</option>
+                    <option>French</option>
+                </select><br><br>
+                <label>Date of Birth:</label>
+                <input type="date">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Professional info</legend>
+                <p>Known Programmign Languages:</p>
+                <ul>
+                    <li>
+                        <label>Python</label>
+                        <input type="checkbox">
+                    </li>
+                    <li>
+                        <label>Java</label>
+                        <Input type="checkbox">
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <Input type="checkbox">
+                    </li>
+                    <li>
+                        <label>C#</label>
+                        <Input type="checkbox">
+                    </li>
+                </ul>
 
-            </ul>
+                <label>Brief applicant summary </label>
+                <br>
+                <textarea cols="50" rows="5"></textarea>
+                <br>
+                <label>image upload:</label>
+                <input type="file">
+                <br>
+                <label>Upload file types like .png,.jpg etc</label>
+            </fieldset>
+            <br>
+            <input type="submit">
         </form>
+
     </body>
-
-
 </html>
