@@ -5,9 +5,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>E-corp</title>
-		<style>table,th, td {
+		<style> * {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f2f3f8;
+		}
+
+			table,th, td {
 			border:  1px solid;
 		}
+
+
 		h2{
 			width: 200px;
 			margin:  0 auto;
@@ -15,6 +24,22 @@
 			border-bottom: 2px solid;
 			
 
+		}
+
+		.submit {
+			width : 120px;
+			margin: 0 40px;
+			height: 35px;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		
+		fieldset {
+			margin: 20px;
+			border-radius:  1%;
+			padding: 20px 30px;
+			background-color: mintcream;
 		}
 
 	</style>
@@ -25,6 +50,9 @@
 			<img src="./ecorp.jpg" hspace="550px, 550px">
 
 			<hr />
+			<br/>
+		<br/>
+		
 
 
 			<table align="center">
@@ -62,14 +90,82 @@
 			    </tr>
 			  </tbody>
 			</table> 
+			<br/>
+		<br/>
+		
 
 		<hr/>
 
-		<h2 align="center">Application Form</h2>
+
+		
+		<form action="./action.html" method="post">
+		<fieldset>
+			<br/>
+		<br/>
+		
+			<h2 align="center">Application Form</h2>
+		<br/>
+		<br/>
 		<br/>
 		<br/>
 		
 
+
+			<label>First Name</label><br>
+			<input type="text" name="firstname" required>
+			<br><br>
+
+			<label>Last Name</label><br>
+			<input type="text" name="lastname" required><br/><br/>
+
+			<label>Age</label><br/>
+			<input type="number" name="age" required /><br/><br/>
+
+			<label>Gender</label><br/>
+			<input type="radio" name="gender" value="male"required/><label>Male</label><br/>
+			<input type="radio" name="gender" value="female"required/><label>female</label>
+			<br/>
+		    <br/>
+		
+
+			<label>Address</label><br/>
+			<textarea name="address" rows="15" cols="50" required>Enter your Address here..</textarea> <br/><br/>
+		    
+
+		    <label>Language you're proficient in: </label>
+		    <select name="language"  required >
+		    	<option value="english">English</option>
+		    	<option value="french">French</option>
+		    	<option value="german">German</option>
+		    </select><br/><br/>
+		    
+
+		    <label>Known Programming Languages</label><br/>
+		    <input type="checkbox" name="programming" required> <label>Python</label><br/>
+		    <input type="checkbox" name="programming" required><label>C</label><br/>
+		    <input type="checkbox" name="programming" required><label>C++</label><br/>
+		    <input type="checkbox" name="programming" required><label>Rust</label><br/><br/>
+
+		    <label>Date Of Birth</label><br/>
+		    <input type="date" name="date" required><br/><br/>
+            <label>Brief Applicant Summary</label><br/>
+		    <textarea name="summary" rows="15" cols="50">write your summary here..</textarea><br/><br/>
+
+		    <label>Upload your image here</label><br/><br/>
+		    <input type="file" name="image" accept="image/png, image/jpg, image/jpeg" required><br/><br/>
+
+
+
+           <br/>
+           <input class="submit" type="submit" value="submit" />
+           <br/>
+           <br/>
+
+
+
+			
+		</fieldset>
+        </form>
 
 </body>
 	
