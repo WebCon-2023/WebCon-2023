@@ -6,7 +6,7 @@ HTML stands for Hyper Text Markup Language. It is the standard markup language u
 
 An HTML document consists of several elements, including the ```<!DOCTYPE>``` declaration, ```<html>``` , ```<head>```, and ```<body>``` tags. Here is an example of a basic HTML document structure:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
