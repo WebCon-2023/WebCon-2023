@@ -1,4 +1,3 @@
-# Donna Thomas
 
-## Third year Civil 
-## College of Engineering Trivandrum
+### College of Engineering Trivandrum
+## Loves to code

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offering Poster</title>
+    <style>
+        body {
+            background-color: rgb(242, 241, 235);
+        }
+
+        #form,
+        #para,
+        #footer {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        #form {
+            background-color: #e2e2e2;
+            border: 2px outset #000000;
+        }
+
+        #para {
+            background-color: #bbeb83;
+            border: 2px outset #000000;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #e60707;
+        }
+
+        img {
+            display: inline-block;
+            margin: auto 0;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: left;
+            padding: 8px;
+            background-color: rgb(251, 229, 141);
+        }
+
+        th {
+            background-color: #233fad;
+            color: white;
+            padding: 8px;
+        }
+
+        input[type=text],
+        textarea,
+        input[type=number],
+        input[type=date] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        input[type=number] {
+            width: 10%;
+        }
+
+        input[type=date] {
+            width: 26%;
+        }
+
+        select {
+            width: 27%;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        input[type=submit] {
+            background-color: #3399ff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #1e147e;
+        }
+
+        footer {
+            background-color: #233fad;
+            color: white;
+            padding: 10px;
+        }
+
+        #rights {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="logo.jpg" alt="Waveform">
+    <h1>We are hiring !!</h1>
+    <div id="para">
+        <p> <b>Waveform</b> is a leading software development firm that is committed to delivering cutting-edge
+            solutions to
+            businesses of all sizes. As we continue to expand our operations, we are seeking talented and motivated
+            individuals to join our team. Currently, we have multiple job vacancies open for software developers and
+            testers. If you have a passion for technology and a desire to work in a fast-paced and dynamic environment,
+            then we encourage you to apply for one of our open positions today!
+        </p>
+    </div>
+    <h2>Job Openings</h2>
+    <br>
+
+    <table border>
+        <thead>
+            <tr>
+                <th>Post</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Junior Software Developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software Developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h2>Application Form</h2>
+    <div id="form">
+        <form action="" method="post" enctype="multipart/form-data">
+            <label>First Name</label>
+            <input type="text" required>
+            <br><br>
+            <label>Last Name</label>
+            <input type="text" required>
+            <br><br>
+            <label>Age</label>
+            <br>
+            <input type="number" min="21" max="45" required>
+            <br><br>
+            <label>Gender</label>
+            <br>
+            <select required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label>Address</label>
+            <textarea required></textarea>
+            <br><br>
+            <label>Language Proficiency in English</label>
+            <br>
+            <select required>
+                <option value="">Select Proficiency</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+            <br><br>
+            <label>Known Programming Languages</label><br>
+            <input type="checkbox" value="c">
+            <label>C</label><br>
+            <input type="checkbox" value="c++">
+            <label>C++</label><br>
+            <input type="checkbox" value="java">
+            <label>Java</label><br>
+            <input type="checkbox" value="python">
+            <label>Python</label><br>
+            <input type="checkbox" value="javascript">
+            <label>JavaScript</label><br>
+            <input type="checkbox" value="other">
+            <label>Others</label><br>
+            <br>
+            <label>Date of Birth</label>
+            <br>
+            <input type="date" required>
+            <br><br>
+            <label>Brief Applicant Summary</label>
+            <textarea required></textarea>
+            <br><br>
+            <label>Upload Image</label>
+            <input type="file" accept="image/*" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="footer">
+        <p>
+            If you have any questions about the position or would like to learn more about our company, please don't
+            hesitate to contact us by sending an email to <a href="mailto:new570331@gmail.com"
+                target="_blank">waveform@gmail.com</a>.
+        </p>
+        <p id="rights">© 2023 Waveform. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
