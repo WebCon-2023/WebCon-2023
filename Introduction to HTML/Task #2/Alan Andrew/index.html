@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ: We are hiring</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+
+        header{
+            display:flex;
+            background-color: black;
+            align-items: center;
+            margin-bottom: 1rem;;
+        }
+        .clogo{
+            width:4rem;
+            height:4rem;
+        }
+        .cname{
+            color: #fff;
+            padding-left: 1rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 32px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+        th {
+            background-color: #111;
+            color: white;
+        }
+
+        hr{
+            width:80%;
+            margin:auto;
+        }
+
+        .hiringst{
+            text-align: center;
+        }
+
+        input[type=text], select{
+            padding: 12px 20px;
+            width: 100%;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=checkbox]{
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        input[type=date]{
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        input[type=file]{
+            padding: 12px 0px;
+            margin: 8px 0;
+        }
+
+        textarea {
+            height: 150px;
+            width: 100%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+        
+        button {
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #1a1a1a;
+        }
+        
+        .sreg{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <img class="clogo" src="https://cdn2.iconfinder.com/data/icons/viiva-content-editor/32/3D_transform-512.png" alt="XYZ Company Logo">
+            <h1 class="cname">XYZ</h1>
+    </header>
+    <section class="stable">
+        <table>
+            <tr>
+                <th>Post</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Junior Software Developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software Developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section class="sreg">
+        <h2 class="hiringst">Register Now</h2>
+        <form class="regfrm" action="" method="post">
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="">
+
+            <label for="age">Age</label>
+            <input type="text" name="age" id="">
+
+            <label for="gender">Gender</label>
+            <input type="text" name="gender" id="">
+
+            <label for="address">Address</label>
+            <input type="text" name="address" id="">
+
+            <label for="lanprof">Language Proficiency</label>
+            <select id="country" name="country">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="malayalam">Malayalam</option>
+            </select><br><br>
+
+            <label for="pgmlang">Known Programming Languages</label><br>
+            <input type="checkbox" id="java" name="java" value="Java">
+            <label for="java"> Java</label><br>
+            <input type="checkbox" id="python" name="python" value="Python">
+            <label for="python"> Python</label><br>
+            <input type="checkbox" id="c" name="c" value="C">
+            <label for="c"> C</label><br><br>
+            
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id=""><br><br>
+
+            <label for="summary">Brief Applicant Summary</label>
+            <textarea name="summary" id="" cols="30" rows="10"></textarea><br><br>
+
+            <label for="imgup">Image Upload</label><br>
+            <input type="file" name="imgup" id=""><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
