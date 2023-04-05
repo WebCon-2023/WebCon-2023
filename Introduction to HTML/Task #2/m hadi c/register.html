@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HADI MUSK INC
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>REGISTERATION FORM</h1>
+        <form action="submit.html" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <br>
+                <legend><b>User personal Info</b></legend><br>
+                <label>First Name</label><br>
+                <input type="text" name="Name"><br>
+                <label>Last Name</label><br>
+                <input type="text" name="Name"><br>
+                <label>Enter Email</label><br>
+                <input type="email" name="Email"><br>
+                <label>Age</label><br>
+                <input type="number" name="Age"><br>
+                <hr>
+                <br><label>gender</label><br>
+                <input type="radio" id="gender" name="gender" value="Male"/>Male<br>
+                <input type="radio" id="gender" name="gender" value="Female"/>Female<br/>
+                <input type="radio" id="gender" name="gender" value="Other "/>Others<br/>
+                <hr>
+                <br>Enter you address:<br>
+                <textarea name="thetext" rows="10" cols="40"></textarea><br><br>
+                <hr>
+                <label for="Language">Select your Answer</label><br>
+                <select name="Language" id="Language">
+                    <optgroup label="Language">
+                        <option value="English">English</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Hindi">Hindi</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <hr>
+                <label>known Programming Languages</label><br>
+                <input type="checkbox" id="prog" name="Programming">C Language<br>
+                <input type="checkbox" id="prog" name="Programming">C++ Language<br/>
+                <input type="checkbox" id="prog" name="Programming">python<br/>
+                <input type="checkbox" id="prog" name="Programming">Java<br/><br>
+                <hr>
+                <label>Date of birth</label><br>
+                <input type="date" id="date" name="date"><br><br>
+                <hr>
+                <label>Brief Appplicant Summary</label><br>
+                <textarea name="thetext" rows="10" cols="40"></textarea><br><br>
+                <hr>
+                <label>Image Upload</label>
+                <input type="file" id="file" name="file"><br><br>
+                <hr>
+                <input type="submit" value="sign up">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
