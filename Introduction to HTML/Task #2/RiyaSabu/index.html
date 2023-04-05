@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<style>
+    body {
+        font-family: 'Alkatra', cursive;
+        background-color: grey;
+        color: rgb(77, 28, 77);
+        margin-left: 150px;
+        margin-right: 150px;
+
+    }
+    .wrapper{
+        display: flex;
+    }
+    header{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    table{
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color:  rgb(77, 28, 77);
+        color:  peachpuff;
+        /* font-family:Georgia, 'Times New Roman', Times, serif; */
+        border-collapse:separate;
+        text-align: center;
+        width: 100%;
+    }
+    td,th{
+        border: 1px solid #dddd;
+        padding: 15px;
+    }
+    .main_form{
+        align-items: center;
+        color: black;
+    }
+    .wrap-up{
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        margin-left: 50px;
+
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        /* font-siz
+        e: larger; */
+    }
+    label{
+        /* color: peachpuff; */
+        font-weight: 100;
+    }
+</style>
+<body>
+    
+        <header >
+            <a href="index.html">
+            <img height="150px" src="img/logo.png" alt="logo">
+            </a>
+            
+        <h1 >  &nbsp; &nbsp; XYZ Technos</h1>
+
+    
+    
+      
+        </header>
+
+        
+
+    
+    <main>
+        <div class="wrapper">
+        <table>
+            <tr>
+                <th>Post</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Junior Software developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Onsite Software tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </table>
+
+
+    </div>
+    <!-- 
+        Criterias 
+        1. First name
+        2. Last name
+        3. Age
+        4. Gender
+        5. Address
+        6. Language proficiency (select)
+        7. Known programming languages (checkboxes)
+        8. Date of birth (date picker)
+        9. Brief applicant summary (text area)
+        10. Image upload (file input)
+        11. Submit button
+     -->
+     <br>
+     <br>
+     <h2 align="center" >Kindly fill the form to apply</h2>
+     <div class="main_form" >
+        <form action=""name="submit-to-google-sheet">
+        <div class="wrap-up">
+            <div class="">
+            <h3>
+                <label for="name-per" >  <b>Name : </b> </label>
+            </h3>
+            
+
+            <!-- First name -->
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            
+        
+            <!-- Last name -->
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <br><br>
+            
+            <h3>
+            <label for="age-per">  <b>Age : </b> </label>
+
+            </h3>
+            
+            <!-- Age -->
+            <input type="number" name="age" id="age" required placeholder="Age">
+            <br><br>
+
+            <!-- Gender -->
+            <h3>
+            <label for="gender"><b>Gender: </b> </label> &nbsp; 
+
+            </h3>
+            
+            <label for="male">Male </label>
+            <input type="radio" name="male" id="male">&nbsp; <br>
+            <label for="female">Female </label>
+            <input type="radio" name="female" id="female">&nbsp; <br>
+            <label for="tg">Transgender </label>
+            <input type="radio" name="tg" id="tg">&nbsp; <br><br>
+            
+            <!-- Address -->
+            <h3>
+            <label for="add-per">  <b>Address : </b> </label>
+
+            </h3>
+            
+            <textarea rows="6" cols="35"  for="address" placeholder="Your Address" required></textarea>
+            <br><br>
+            
+                
+            <!-- Language proficiency (select) -->
+            <h3>
+            <label for="lang">  <b>Language proficiency :</b> </label>
+
+            </h3>
+            <select name="lang" id="lang" required>
+                <option value="eng">English</option>
+                <option value="ger">German</option>
+                <option value="mal">Malayalam</option>
+                <option value="hin">Hindi</option>
+            </select>
+            
+        </div>
+        <div>
+            <!-- Known programming languages (checkboxes) -->
+            <h3>
+            <label for="pgm-lang">  <b>Known programming languages :</b> </label>
+
+            </h3>
+            
+            <input type="checkbox" name="pgm1" id="python" value="python">
+            <label for="pgm1">Python</label>
+            <br>
+            <input type="checkbox" name="pgm2" id="java" value="java">
+            <label for="pgm2">Java</label>
+            <br>
+            <input type="checkbox" name="pgm3" id="cplus" value="cplus">
+            <label for="pgm3">C/C++</label>
+            <br>
+            <input type="checkbox" name="pgm4" id="dart" value="dart">
+            <label for="pgm4">Dart</label>
+            <br>
+            <input type="checkbox" name="pgm5" id="kotlin" value="kotlin">
+            <label for="pgm5">Kotlin</label>
+
+            <br><br>
+
+
+
+            <!-- Date of birth picker   -->
+            <h3>
+            <label for="dob"> <b>DOB: &nbsp; </b></label>
+
+            </h3>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+
+            <!--  Applicant summary -->
+            <h3>
+            <label for="sum"><b>Applicant summary: </b></label> <br>
+
+            </h3>
+            <textarea rows="8" cols="40" for="summary" placeholder="Brief applicant summary" ></textarea>
+            <br><br>
+            <h3>
+            <label for="img"> <b>Select image:</b></Select></label>
+                
+            </h3>
+            <!-- Image upload  -->
+            <input type="file" id="img" name="img" accept="image/*">
+            <br><br>
+            </div>
+
+        </div>
+            <!-- Submit button  -->
+            <div class="" align="center">
+            <input type="submit" >
+
+
+            </div>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+           
+
+
+
+
+
+            
+        </form>
+     </div>
+    </main>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzkjL7lvfkfhhVuDhuSLG6xmx4InV8Y_Geox0dxlKaeGWq7EX-yw1eqCb3358kH7Gg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
