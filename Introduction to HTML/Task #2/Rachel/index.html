@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archives Company </title>
+        
+    </head>
+    <body>
+        
+        <h1>Archives Hiring- Apply Now!</h1>
+        <hr style="height:2px;border-width:0;background-color:black">
+        <img src="https://img.freepik.com/free-vector/simple-business-logo-with-letter-design_53876-115919.jpg" height="100px">
+        <h3>Job Details</h3>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>Job</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Junior Software developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+
+        </table>
+        <br>
+        <form>
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+            <br>
+            <div>
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" name="Age" placeholder="Age" min="0">
+            </div>
+            <br>
+            <div>
+                <label for="gd">Gender:</label>
+                <input type="text" id="gd" name="gd" placeholder="Gender">
+            </div>
+            <br>
+            <div>
+                <label for="ad">Address:</label>
+                <input type="text" id="ad" name="ad" placeholder="Address">
+            </div>
+            <br>
+            <div>
+                <label for="lp">Language Proficiency</label>
+                <select id="lp" name="lp">
+                    <option value="Bg">Beginner</option>
+                    <option value="im">Intermediate</option>
+                    <option value="ex">Expert</option>
+                </select>
+            </div>
+            <br>
+            
+
+
+            <div>
+                <label for="pl">Known Programming Languages:</label>
+
+                <label for="be">C</label>
+                <input type="radio" id="be" value="be">
+
+                <label for="im">C++</label>
+                <input type="radio" id="im" value="im">
+
+                <label for="ex">Java</label>
+                <input type="radio" id="ex" value="ex">
+
+                <label for="py">Python</label>
+                <input type="radio" id="py" value="py">
+            </div>
+            <br>
+            <div>
+                <label for="bdate">Date of Birth:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+            <br>
+            <div class="input group">
+                <label for="Brief applicant summary:">Brief applicant summary:</label>
+                <br>
+                <textarea id="Brief applicant summary:" rows="9"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="image">Image Upload</label>
+                <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <br>
+
+
+
+
+
+            <div>
+                <input type="submit">
+            </div>
+            <br>
+        </form>
+
+
+    </body>
+
+</html>
