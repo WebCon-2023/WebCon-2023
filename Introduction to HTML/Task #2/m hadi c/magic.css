@@ -1,0 +1,54 @@
+img{
+    height: 100px;
+    vertical-align: middle;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+}
+table{
+    position: relative;
+    left: 400px;
+    
+    background-color: palegoldenrod;
+    width: 500px;
+}
+#row1{
+    background: white;
+}
+#text1{
+    color: crimson;
+}
+#text2{
+    color: midnightblue;
+}
+#text3{
+    color: midnightblue;
+}
+#tr{
+    size: 50px;
+}
+h2{
+    border: 10px;
+    border-color: black;
+    border-style: outset;
+    size: 100px;
+    text-align: center;
+    background-color: darkgray;
+}
+button{
+    border: 10px;
+    border-color: burlywood;
+    border-style: double;
+    border-radius: 100px;
+    background-color: darkcyan;
+    position: relative;
+    left: 500px;
+    right: 500px;
+    padding: 15px 32px;
+    text-align: center;
+}
+#tag1{
+    color: chocolate;
+    text-align: center;
+}
