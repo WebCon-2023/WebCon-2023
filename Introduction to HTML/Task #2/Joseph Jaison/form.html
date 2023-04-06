@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form{
+            padding-left:40%;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>Registration Form</u></h1><br></center>
+        <hr><br>
+    <form action="/action_page.php">
+       <h3>
+        <p> First Name: <input type="text" placeholder="Enter your first name"></p>
+        <p> Last Name: <input type="text" placeholder="Enter your last name"></p>
+        <p>Age:&nbsp;<input type="number" min="18" max="40" placeholder="Age"></p>
+        <p>Gender:&nbsp;
+            <input type="radio" name="Gender" value="Male"> Male&nbsp;
+           <input type="radio" name="Gender" value="Female">  Female&nbsp;
+            <input type="radio"name="Gender" value="Other">Other&nbsp;
+        </p>
+        <p>Address:&nbsp;<input type="text" placeholder="Enter your address"></p>
+        <p><label for="Languages">Languages:&nbsp;</label>
+            <select name="Languages" id="Languages">
+            <option >English</option>
+            <option>Hindi</option>
+            <option>Malayalam</option>
+        </select></p>
+        <p>Known Programming Languages:&nbsp;
+            <input type="checkbox"> C &nbsp;
+             <input type="checkbox"> PYTHON &nbsp;
+             <input type="checkbox"> JAVA
+            </p>
+        <p>Date of Birth:&nbsp;<input type="date"></p>
+        <p>About you:</p><textarea rows="5"cols="35"></textarea><br>
+        <p>Upload your image:&nbsp;<input type="file"></p>
+        <p><input type="submit" formaction="gif.gif" style="margin-left:12%;"></p>
+    </h3>
+    </form>
+</body>
+</html>
