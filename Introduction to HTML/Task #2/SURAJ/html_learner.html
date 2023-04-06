@@ -1,0 +1,146 @@
+<html>
+    <style type="text/css">
+        html {
+    font-family: sans-serif;
+  }
+  
+  table,th,thead {
+    border-collapse: collapse;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  
+
+  
+  th {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+  
+  caption {
+    padding: 10px;
+  }
+    </style>
+    <title>XYZ</title>
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    
+
+
+        <body>
+            <h1> XYZ COMPANY</h1>
+            <hr>
+            <img src="XYZ LOGO.jpg" width="100" height="100" >                
+            <hr>
+            <table>
+            <th >
+                <tr>
+                    <td >POST</td>
+                    <td >SALARY</td>
+                    <td >LOCATION</td>
+
+                </tr>
+            </th>
+
+            <tr>
+                <td>Junior Software Developer</td>
+                <td>20000</td>
+                <td>REMOTE</td>
+            </tr>
+            <tr>
+               <td> Senior Software Developer</td>
+               <td>30000</td>
+               <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+           </table>
+        
+        <form action="">
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="First Name">First Name</label><br>
+                    <input type="text" id="First Name" name="name1"/><br>
+
+                </li>
+                <li>
+                    <label for="Last Name">Last Name:</label><br>
+                    <input type="text" id="Last Name" name="name2"/><br>
+
+                </li>
+                <li>
+                    <label for="Gender">Gender:</label><br>
+                    <input type="text" name=" Gender" id="Gender"><br>
+                </li>
+                <li>
+                    <label for="address"> Address:</label><br>
+                    <input type="text" name="Address" id="address"><br>
+                </li>
+                <li>
+                    <h4>Language Proficiency</h4>
+                    <hr color="black">
+                    <label >
+                         <input type="radio" name="Language" id="Language_P" value="ENGLISH"> ENGLISH<br>
+
+                    </label>
+                    <label >
+                       <input type="radio" name="Language" id="Language_P" value="MALYALAM"> MALAYALAM  <br>
+                    </label>
+                 
+
+                </li>
+                <li>
+                    <label for="programming languages">Programming Languages known</label>
+                    <br>
+                    <input type="checkbox" name="Python" id="Python"><label for="Python">Python</label>
+                    <br>
+                    <input type="checkbox" name="C" id="C" ><label for="C">C Language</label>
+                    <br>
+                    <input type="checkbox" name="C++" id="C++"><label for="C++">C++</label>
+                </li>
+                <li>
+                    <label for="DOB">DATE OF BIRTH</label>
+                    <br>
+                    <input type="date" name="DOB" id="DOB">
+                </li>
+                <LI>
+                    <label for="Applciant_summary">Describe yourself</label>
+                    <br>
+                    <textarea name="Applciant_summary" id="Applciant_summary" cols="100" rows="10" minlength="100"></textarea>
+
+                </LI>
+                <li>
+                    <label for="img">Upload Image</label>
+                    <br>
+                    <input type="file" name="img" id="img" accept="image/png,image/jpeg">
+                </li>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            
+
+            </ul>
+        </fieldset>
+        </form>
+        
+        </body>
+    
+</html>

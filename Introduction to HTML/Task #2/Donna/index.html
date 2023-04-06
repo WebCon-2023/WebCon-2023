@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XYZ Company</title>
+</head>
+<body>
+    <img src="company.jpg" alt="Company logo" width="100" height="100">
+    <table border="2px" bgcolor="#D3D3D2">
+        <thread>
+            <tr>
+                <td>Post</td>
+                <td>Salary</td>
+                <td>Location</td>
+            </tr>
+            <tr>
+                <td>Junior Software developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software Developer</td>
+                <td>30000 </td>
+                <td>Onsite</td>
+            </tr><tr>
+                <td>Software Tester </td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </thread>
+    </table>
+   
+<h1>Registration Form</h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="fname">Gender:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="fname">Age:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="fname">Address:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="LP">Language Proficiency:</label>
+  <select name="LP" id="level" form="LP">
+  <option value="fluent">fluent</option>
+  <option value="limited">limited</option>
+  <option value="elementary">elementary</option>
+</select>
+  <p>Known programing languages:</p>
+  <input type="checkbox" id="lang1" name="lang1" value="C++">
+  <label for="lang1"> C++</label><br>
+  <input type="checkbox" id="lang2" name="lang2" value="Java">
+  <label for="lang2"> Java</label><br>
+  <input type="checkbox" id="lang3" name="lang3" value="Python">
+  <label for="lang3"> Python</label><br>
+  <label>Date of birth:<input type="date" name="dob" /></label>
+  <p><label for="Brief applicant summary">Brief applicant summary:</label></p>
+  <textarea id="Brief applicant summary" name="Brief applicant summary" rows="4" cols="50"></textarea>
+  <p>Upload image</p>
+  <input type="file" id="myFile" name="filename">
+  <br></br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
