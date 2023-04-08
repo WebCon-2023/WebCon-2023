@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Offering Poster</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<center> <img src="company_logo.png" alt="Company Logo" width="150" height="150">
+<p>We're hiring developers! If you have a passion for coding and want to work on exciting projects in a supportive environment, apply today! Competitive compensation and growth opportunities available.</p></center>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Post</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Junior Software Developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software Developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="#" method="post">
+        <h2>Job Application Form</h2>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your First Name" required>
+        <br> 
+		<br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+		 <br>
+         <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Your Age" required>
+		<br>
+		<br>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+		<br>
+		<br>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Your Address" required></textarea>
+		<br>
+		<br>
+        <label for="language">Language Proficiency</label>
+        <select id="language" name="language" required>
+            <option value="">Select Language Proficiency</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+		<br>
+		<br>
+        <label for="programming-languages">Known Programming Languages</label><br>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="python" name="python" value="python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="C" name="C" value="C">
+        <label for="C">C</label><br>
+		<br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+		<br>
+		<br>
+        <label for="summary">Brief Applicant Summary</label>
+        <textarea id="summary" name="summary" placeholder="Your Brief Summary" required></textarea>
+		<br>
+		<br>
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+		<br>
+		<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
