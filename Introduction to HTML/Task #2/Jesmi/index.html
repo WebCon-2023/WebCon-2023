@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>ABC Company,Latest Job Opportunities</h1>
+    <img src="./image/logo.png" width="200px">
+    <table>
+        <tr>
+            <th align="left">Post</th>
+            <th>Salary</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Junior Software developer </td>
+            <td>20000 </td>
+            <td>Remote</td>
+        </tr>
+        <tr>
+            <td>Senior Software developer </td>
+            <td>30000 </td>
+            <td>Onsite</td>
+        </tr>
+        <tr>
+            <td>Software Tester </td>
+            <td>25000 </td>
+            <td>Onsite</td>
+        </tr>
+    </table>
+    <h3>Register Here</h3>
+    <form>
+        <label>First name</label>
+        <input type="text" name="Name"><br>
+        <label>Last name</label>
+        <input type="text" name="Name"><br>
+        <label>Age</label>
+        <input type="number" name="Age"><br>
+        <label>Gender</label>
+        <input type="radio" id="gender1" value="Female">
+        <label for="gender1">Female</label>
+        <input type="radio" id="gender2" value="Male">
+        <label for="gender2">Male</label><br>
+        <label>Address</label><br>
+        <textarea name="textarea"></textarea><br>
+        <label>Language Proficiency</label>
+        <select name="language" id="lang">
+            <option value="">Please select an option</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="React">React</option>
+        </select><br>
+        <label>Known Languages</label>
+        <div>
+            <input type="checkbox" id="c">
+            <label for="c">C</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c">
+            <label for="c">C++</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c">
+            <label for="c">python</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c">
+            <label for="c">React</label>
+        </div>
+        <label>Date of Birth</label>
+        <input type="date" name="date" value="2001-09-26" min="1997-01-01" max="2002-12-31"><br>
+        <label>Brief Applicant Summary</label><br>
+        <textarea name="textarea"></textarea><br>
+        <label>Upload image file</label>
+        <input type="file" id="imagefile" accept=".png,.jpg,.jpeg"><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+
+</html>
