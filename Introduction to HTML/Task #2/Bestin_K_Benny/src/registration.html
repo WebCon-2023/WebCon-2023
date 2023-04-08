@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bg{
+          background-image:url(./bg.jpg);
+          height: 745px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        };
+        .nav{
+float: right;
+
+        };
+        .button{
+       border: none;
+       background:none ;
+       }
+    </style>
+    <title>Registration</title>
+</head>
+<body style=" height: 100%;margin: 0;">
+  <div class="bg">
+    <div class="nav"><button class="button" style="cursor: pointer;" onclick="history.back()"><img src="./back.png" alt="home" style="height: 30px;width: 30px;"></button></div>
+    <div style="padding-top:5em; " id="register">
+        <div style="border:solid;border-radius:0.1px;border-width:0.5px;width:30em;height: 36em;margin: auto;background-color: white;">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <div style="padding:30px 30px;padding-top: 10px;">
+            <forms>
+             <label for="First_Name">First name:</label>
+             <input type="text" id="First_Name"><br><br>
+             <label for="Last_Name">Last name:</label>
+             <input type="text" id="Last_Name"><br><br>
+             <label for="Age">Age:</label>
+             <input type="number" id="Age"><br><br>
+             <label for="Gender">Gender:</label>
+             <input type="radio" id="Gender Male" value="Male">
+             <label for="Male">M</label>
+             <input type="radio" id="Gender Female" value="Female">
+             <label for="Female">F</label>
+             <input type="radio" id="Gender Other" value="Other">
+             <label for="Other">O</label>
+             <br><br>
+             <label for="Address">Address:</label>
+             <input type="textarea" id="Address"><br><br>
+             <label for="Language_proficiency">Language proficiency:</label>
+          <select name="Languages" id="Language_proficiency">
+            <option>Novice</option>
+            <option>Intermediate</option>
+            <option>Expert</option>
+          </select><br><br>
+          <label for="programming_languages">Known programming languages:</label>
+             <input type="checkbox" id="programming_languages" value="Java">
+             <label for="Java">Java</label>
+             <input type="checkbox" id="programming_languages" value="C">
+             <label for="C">C</label>
+             <input type="checkbox" id="programming_languages" value="Python">
+             <label for="Python">Python</label><br><br>
+             <label for="Date_of_birth">Date of birth:</label>
+             <input type="date" id="Date_of_birth"><br><br>
+             <label for="Brief_applicant_summary">Brief applicant summary:</label>
+             <textarea rows="3" cols="30" name="comment" form="usrform" id="Brief_applicant_summary"></textarea><br><br>
+             <label for="Image_upload">Upload image:</label>
+             <input type="file" id="Image_upload"><br><br><br>
+             <center><input type="submit" value="Submit"></center>
+        
+        
+            </forms></div>
+        </div></div></div>
+</body>
+</html>
