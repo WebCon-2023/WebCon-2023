@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  background-color: #FD7062;
+  font-family: 'Roboto';
+}
+.head {
+  display: flex;
+}
+img {
+  width: auto;
+  height: 20px;
+  border-radius: 50%;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman";
+  margin: 0;
+  vertical-align: middle;
+}
+.left {
+  padding-right: 20px;
+}
+.hire {
+  font-size: 80px;
+  font-family: "Yeseva One";
+  margin: auto;
+  height: 50%;
+}
+.form {
+  line-height: 1.4;
+  background-color: whitesmoke;
+  padding: 16px;
+}
+.fhead {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+label {
+  font-size: 14px;
+  padding-right: 15px;
+  font-weight: 600;
+}
+th,td {
+  font-size: 16px;
+  padding: 10px;
+}
+table {
+  margin-top: 100px;
+  background-color: #4B4DF7;
+  color: white;
+  box-shadow: 10px 5px 0px black;
+
+}
+
+button {
+  color: white;
+  background-color: #4B4DF7;
+  font-size: 16px;
+  padding: 8px;
+}

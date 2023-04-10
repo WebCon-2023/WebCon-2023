@@ -1,0 +1,33 @@
+h1{
+    color: palegoldenrod;
+    text-align: center;
+    size: 50px;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/1164874.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+form{
+    position: relative;
+    left: 400px;
+    right: 400px;
+    background-color: transparent;
+    font-style: oblique;
+}
+fieldset{
+    background-color: rgba(255, 228, 196, 0.322);
+
+    background-size: 100%;
+    text-align: center;
+    width: 400px;
+    border-radius: 14px;
+
+}
+legend{
+    color: black;
+}

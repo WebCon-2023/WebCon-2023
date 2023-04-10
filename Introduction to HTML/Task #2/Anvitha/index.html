@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <div class="image" style="text-align: center;">
+        <img src="https://media.datacenterdynamics.com/media/images/XYZ_New_logo_349_175.2e16d0ba.fill-279x140.png" height="100px" class="center">
+    </div>
+    <br>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/564x/38/93/07/389307ce989ba1d316ab658313c04d6d.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .introduction{
+            background-color: #f3546c93;
+            border: 3px outset #f3546c;
+            text-align: center;
+            width: 1000px;
+            height: 160px;
+            margin: auto;
+            border-radius: 15px;
+            font-size: 15px;
+            padding: 2px 20px 2px 20px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite
+        }
+        @keyframes example {
+            from{background-color: #C3EEFA;}
+            to {background-color: #f3546c9f;}
+        }
+
+        .table{
+            width: 100%
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 70%
+            
+        }
+        th, td {
+            text-align: left;
+            padding: 5px;
+            background-color: #f3546c44;
+        }
+
+        th {
+            background-color: #f3546c;
+            color: white;
+        }
+        .RegformTitle{
+            text-align: center;
+            width: 100%
+        }
+
+        form {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f3f35464;
+        }
+
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+  
+        }
+        input[type="text"], input[type="tel"], input[type=":checked"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+    </head> 
+    <body>
+ 
+    <div class="introduction">
+        <h3>Welcome to XYZ Company</h3>
+        <p>Join the XYZ Company team and light up your career in software development! We are a 
+            dynamic and innovative software company that creates exceptional digital experiences for 
+            our clients. We offer a collaborative and supportive work environment, challenging projects,
+            and opportunities for professional growth. If you're looking to join a company that values 
+            creativity, excellence, and teamwork, apply to join the XYZ Company family today!</p>
+        <p>Current Details about vacancies are given below. Kindly fill out the form if you wish
+            to express your interest.</p>
+    </div>
+<br>
+    <div class="table">
+        <table border="1">
+            <tr>
+                <th>POST</th>
+                <th>SALARY</th>
+                <th>LOCATION</th>
+            </tr>
+            <tr>
+                <td>Junior Software Developer</td>
+                <td>20,000</td>
+                <td>Remote</td>
+            </tr>
+            <tr>
+                <td>Senior Software Developer</td>
+                <td>30,000</td>
+                <td>Onsite</td>
+            </tr>
+            <tr>
+                <td>Software Tester</td>
+                <td>25,000</td>
+                <td>Onsite</td>
+            </tr>
+        </table>
+    </div>
+<br>
+    <div class="RegformTitle">
+        <h2>REGISTRATION FORM</h2>
+    </div>
+    <form>
+        <div class="formg">
+            <label for="fname">First Name:<br></label>
+            <input type="text" id="fname" name="fname" required></input><br>
+
+            <label for="lname">Last Name:<br></label> 
+            <input type="text" id="lname" name="lname" required></input>
+
+            <label for="age">Age:<br></label>
+            <input type="text" id="age" name="age" required></input>
+
+            <label for="gender">Gender:<br></label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select> 
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea>
+           
+            <label for="lang">Language Proficiency:<br></label>
+            <select id="lang" name="lang">
+                <option value="beg">Beginner</option>
+                <option value="int">Intermediate</option>
+                <option value="adv">Advanced</option><br>
+            </select>           
+
+            <fieldset>
+                <legend>Known Programming Languages</legend>
+                <div>
+                    <input type="checkbox" id="css" name="css" value="css">
+                    <label for="css">CSS</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="py" name="py" value="py">
+                    <label for="py">Python</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="html" name="html" value="html">
+                    <label for="html">HTML</label><br>
+                </div>
+              </fieldset>
+              <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+            <br>
+
+            <label for="sum">Brief Applicant Summary:</label>
+            <textarea id="sum" name="sum" rows="4" cols="50"></textarea>
+            <br>
+
+            <label for="file">Upload your photograph: </label>
+            <input type="file" id="myFile" name="filename">
+            <br>
+            <br>
+            
+        </div>
+        <input type="submit">
+        </div>
+    </form>
+ </body>
+</html>

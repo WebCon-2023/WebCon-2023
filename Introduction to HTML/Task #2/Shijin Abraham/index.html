@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital scale=1.0">
+        <title>JOB POSTER</title>
+    </head>
+    <body>
+        <main>
+            <div class="logo">
+                <img src="Spotify_Logo_RGB_Green.png" alt="Spotify Logo">
+            </div>
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Post</th>
+                            <th>Salary</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td>Junior Software Developer</td>
+                            <td>20000</td>
+                            <td>Remote</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Software Developer</td>
+                            <td>30000</td>
+                            <td>Onsite</td>
+                        </tr>
+                        <tr>
+                            <td>Software Tester</td>
+                            <td>25000</td>
+                            <td>Onsite</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span>We're Hiring,</span> Interested candidates can fill out the form given below..</p>
+            <form method="post" id="form">
+                <fieldset class="form">
+                    <label for="first-name">First Name: <input type="text" id="first-name" placeholder="Enter Your First Name" class="info"></label>
+                    <label for="last-name">Last Name: <input type="text" id="last-name" placeholder="Enter Your Last Name" class="info"></label>
+                    <label for="dob">Date of Birth: 
+                        <input type="date" id="dob" class="info">
+                    </label>
+                    <label for="email">Email: <input type="email" id="email" placeholder="Enter your email" class="info"></label>
+                    <label for="age">Age: <input type="number" id="age" min="20" max="45" placeholder="Enter Your Age" class="info"></label>
+                    <label for="gender">Gender: 
+                        <select id="gender">
+                            <option value="">Select Your Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Others</option>
+                        </select>
+                    </label>
+                    <label for="address">Address: <input type="text" id="address" placeholder="Enter Your Address" class="info"></label>
+                    <label for="language">Language Proficiency: 
+                        <select id="language">
+                            <option value="">Select</option>
+                            <option value="1">Elementary Proficiency</option>
+                            <option value="2">Limited Working Proficiency</option>
+                            <option value="3">Professional Working Proficiency</option>
+                            <option value="4">Native/Bilingual Proficiency</option>
+                        </select>
+                    </label>
+                    <label for="prog-lang" id="lang">Known Programming Languages:
+                        <label><input type="checkbox" id="prog-lang">Python</label>
+                        <label><input type="checkbox" id="prog-lang">C and C#</label>
+                        <label><input type="checkbox" id="prog-lang">C++</label>
+                    <label><input type="checkbox" id="prog-lang">PHP</label>
+                        <label><input type="checkbox" id="prog-lang">Javascript</label>
+                        <label><input type="checkbox" id="prog-lang">Ruby</label>
+                        <label><input type="checkbox" id="prog-lang">Scala</label>
+                    </label>
+                    <label for="image">Upload Your Photo:
+                         <input type="file" id="image">
+                    </label>
+                    <label for="bio">Brief Summary About You: 
+                        <textarea rows="5" cols="40" placeholder="Write about you strengths, hobbies etc."></textarea>
+                    </label>
+                    <input type="submit" value="Submit" id="submit">
+                </fieldset>
+            </form>
+            <p>For more info visit <a href="https://lifeatspotify.com/">Life at spotify</a></p>
+        </main>
+    </body>
+</html>
+
+<style>
+    * {
+        font-family: cursive;
+        font-size: medium;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 80vw;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 0 auto;
+        color: black;
+        background: url(BG.jpg);
+    }
+    
+    main {
+        background-color: dimgray;
+        margin: 0 auto;
+        height: 100%;
+        padding: 10px;
+        padding-top: 5%;
+    }
+    
+    form {
+        width: 70vw;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        padding-right: 15px;
+    }
+    
+    p {
+        margin: 2em 0;
+        text-align: center;
+        font-size: larger;
+    }
+    
+    img {
+        width: 50vw;
+        margin: 0 auto;
+        position: relative;
+        left: 10%;
+    }
+    
+    table {
+        width: 70%;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    th {
+        width: calc(100% - 12rem);
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    span {
+        font-style: oblique;
+        font-weight: bold;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    
+    label {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    #image,
+    textarea,
+      select {
+        margin: 10px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+        border-radius: 7.5px;
+        border: 0 solid #c8c3cc;
+    }
+    
+    .info {
+        margin: 10px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+        border-radius: 7.5px;
+        border: 0 solid #c8c3cc;
+    }
+    
+    input[type="submit"] {
+        display: block;
+        width: 70%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        min-width: 300px;
+        border: 0 solid #c8c3cc;
+        border-radius: 7.5px;
+        color: #c8c3cc;
+      }
+</style>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>George Company </title><br>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: solid;
+        }
+         img {
+                border: 1px solid #2b2a2a; 
+                border-radius: 50px; 
+                border-style: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        body {
+            background-color: powderblue;}
+        table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+            border-radius: 20px;
+		}
+        h3
+        {
+            text-align: center;
+        }
+        form {
+			max-width: 500px;
+			margin: 0 auto;
+
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            display: flex;
+            color: white;
+            padding: 15px 32px;
+            align-content:center;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+            font-size: 16px;
+            margin:auto;
+            cursor: pointer;
+        }
+        div{
+            align-content: center;
+            max-width: 800px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #062b28ca;
+			border: 3px outset #000000;
+			border-radius: 15px;
+            color: rgb(220, 230, 239);
+        }
+        
+        table, th, td {
+  border: 1px solid black;
+}
+        
+        </style>
+   
+    <h1> The George Company</h1>
+    <img src=https://img.freepik.com/premium-vector/wood-working-vintage-logo-design-inspiration_139869-252.jpg?w=2000 width="200" height="200" class="center">
+    <br>
+   <p>
+    <h3>Job Details</h3>
+    <div id="tab">
+    <table>
+        <tr>
+          <th>Post </th>
+          <th> Salary</th>
+          <th>Location</th>
+
+        </tr>
+        <tr>
+            <td>Junior Software developer</td>
+            <td> 20000</td>
+            <td>Remote</td>
+        </tr>
+        <tr>
+            <td>Senior Software Developer </td>
+            <td>30000</td>
+            <td>Onsite</td>
+          </tr>
+          <tr>
+              <td>Software Tester </td>
+              <td>25000</td>
+              <td>Onsite</td>
+            </tr>
+    </table></p></div>
+    <h3>User Registation Form</h3>
+    <div id="form">
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <p>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br></p>
+        <p> <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">MALE</label><br>
+        <input type="radio" id="female" name="gender" value="FEMALE">
+        <label for="female">FEMALE</label><br></p>
+        
+        <p><label for="address">Address:</label><br>
+        <textarea type="text" name="address" id="address" cols="35"rows="6"></textarea><br></p>
+        <p><label for="language">Language Proficiency in English:</label><br>
+        <select
+        name="language" id="language">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="excellent">Excellent</option>
+        </select><br></p>
+       <p> <label for="prog_lang">Known Programming Languages :</label><br>
+        <input type="checkbox" id="java" name="prog_lang" value="Java">
+        <label for="java"> JAVA</label><br>
+        <input type="checkbox" id="python" name="prog_lang" value="Python">
+        <label for="python">PYTHON</label><br>
+        <input type="checkbox" id="c" name="prog_lang" value="C">
+        <label for="c">C</label><br>
+        <input type="checkbox" id="cpp" name="prog_lang" value="C++">
+        <label for="cpp">C++</label><br>
+        <input type="checkbox" id="sql" name="prog_lang" value="SQL">
+        <label for="sql">SQL</label><br></p>
+
+        <p><label for="dob">Enter Date of Birth :</label><br>
+        <input type="date" id="dob" name="dob"><br></p>
+
+       <p> <label for="summary">Write a brief summary about you :</label><br> 
+        <textarea type="text" id="summary" name="summary" cols="45"rows="8"></textarea><br></p>
+
+        <p> <label for="img_upload">Upload Your Image :</label>
+            <input type="file" id="img_upload" name="img_upload">
+        </p></div>
+        <input type="submit" value="Submit" >
+        
+
+       
+
+    </form>
+        
+</body>     
+
+</head>
