@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+        <title>Get hired now!</title>
+    </head>
+    <body bottommargin="50px" leftmargin="100px" rightmargin="100px" topmargin="50px" text="black" >
+
+        <img src="img.png" height="100px" alt="Company logo" loading="eager" align="top" border="10px">
+       <br>
+       
+        
+        <br>
+        
+        <table align="center" bgcolor="white" border="10px" cellpadding="5px" width="1220px" overflow-x:auto>
+            <thead>
+                <tr align="center">
+                    <th colspan="3" bgcolor="white">JOB DETAILS</th>
+                </tr>
+            </thead>
+            <tr align="char" bgcolor="purple">
+                <th scope="col">POST</th>
+                <th scope="col">SALARY</th>
+                <th scope="col">LOCATION</th>
+            </tr>
+
+            <tr align="char">
+                <td>Junior Software developer</td>
+                <td>20000</td>
+                <td>Remote</td>
+            </tr>
+
+            <tr align="char">
+                <td>Senior Software Developer</td>
+                <td>30000</td>
+                <td>Onsite</td>
+            </tr>
+
+            <tr align="char">
+                <td>Software Tester</td>
+                <td>25000</td>
+                <td>Onsite</td>
+            </tr>
+        </table>
+        <br>
+
+        <br>
+        
+        <form autocomplete="on" enctype="multipart/form-data" method="get" action="thankyou.html">
+            <fieldset>
+                <br>
+                <legend align="center"><strong>REGISTER NOW!!!</strong></legend>
+                <br>
+
+                <div class="name">
+                <label><strong>FIRST NAME</strong></label>
+                <input type="text" name="Name" required>
+                </div>
+                <br><br>
+                
+                <div class="name">
+                <label><strong>LAST NAME </strong></label>
+                <input type="text" name="Name">
+                </div>
+                <br><br>
+
+                <div class="age">
+                <label><strong>AGE</strong></label>
+                <input type="number" name="Number" required>
+                </div>
+                <br><br>
+
+                <div class="gender">
+                <label><strong>GENDER</strong></label>
+                <input type="radio" id="gender" name="gender" value="male"/>Male
+                <input type="radio" id="gender" name="gender" value="female"/>Female
+                <input type="radio" id="gender" name="gender" value="others"/>Others
+                </div>
+                <br><br>
+
+                <div class="address">
+                <label><strong>ADDRESS</strong></label>
+                <br>
+                <textarea name="thetext" rows="3" cols="100" required></textarea>
+                </div>
+                <br><br>
+
+                <div class="lang">
+                <label><strong>LANGAUGE PROFICIENCY</strong></label>
+                <select name="language" id="language" required>
+                    <datalist>
+                        <option value="Elementary">Select</option>
+                        <option value="Elementary">Elementary</option>(Basic level knowledge)
+                        <option value="Limited">Limited</option>(sizable vocabulary and can converse socially)
+                        <option value="Professional">Professional</option>(understands technical terminology specific to their industry)
+                        <option value="Fully Proficient">Fully Proficient</option>(Full command over the language)
+                        <option value="Fluent">Fluent</option>
+                    </datalist>
+                </select>
+                </div>
+                <br><br>
+
+                <div class="pgm lang">
+                <label><strong>KNOWN PROGRAMMING LANGAUGES</strong></label>
+                <br>
+                <input type="checkbox" name="programming lang" id="programming lang" value="C"/>C<br>
+                <input type="checkbox" name="programming lang" id="programming lang" value="c++"/>C++<br>
+                <input type="checkbox" name="programming lang" id="programming lang" value="python"/>Python<br>
+                <input type="checkbox" name="programming lang" id="programming lang" value="java"/>Java<br>
+                <input type="checkbox" name="programming lang" id="programming lang" value="html"/>HTML<br>
+                </div>
+                <br><br>
+
+                <div class="dob">
+                <label><strong>DATE OF BIRTH</strong></label>
+                <input type="date" name="dob"  id="dob" required>
+                </div>
+                <br><br>
+
+                <div class="app summary">
+                <label><strong>BRIEF APPLICATION SUMMARY</strong></label>
+                <br>
+                <textarea name="thetext" rows="10" cols="100" required></textarea>
+                </div>
+                <br><br>
+
+                <div class="file">
+                <label><strong>Upload your image</strong></label>
+                <input type="file" name="file" required>
+                </div>
+                <br><br>
+
+                <div class="final" align="center">
+                <input type="submit" value="submit">
+                <input type="reset" value="clear">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
