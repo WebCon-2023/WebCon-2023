@@ -1,0 +1,23 @@
+#no-js {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #0e1955;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgba(113, 45, 133, 0.1);
+}
+
+#no-js:hover {
+  box-shadow: 5px 5px 10px rgba(113, 45, 133, 0.5);
+  background-color: #1b35cb;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 20px;
+  padding: 0;
+  background-color: #252525;
+}

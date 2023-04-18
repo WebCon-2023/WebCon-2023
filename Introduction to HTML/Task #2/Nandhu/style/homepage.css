@@ -1,0 +1,69 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dfe2f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #34459c;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #6f6a6a;
+}
+
+tr:nth-child(odd):hover {
+  background-color: #782a82;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even):hover {
+  background-color: #d640b1;
+}
+
+button#apply {
+  font-family: "JetBrains Mono", monospace;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button#apply:hover {
+  color: #2f3136;
+  background-color: #378239;
+  box-shadow: 0 0 10px #07a4c4fa;
+}
