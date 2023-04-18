@@ -1,0 +1,148 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dfe2f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+select option {
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style the checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1192bc;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.05s linear;
+  position: relative;
+}
+
+input[type="checkbox"]:after {
+  content: "\2714";
+  font-size: 15px;
+  color: #47c74b;
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  opacity: 0;
+  transition: all 0.05s linear;
+}
+
+input[type="checkbox"]:checked:after {
+  opacity: 1;
+}
+
+button#submit-btn {
+  font-family: "JetBrains Mono", monospace;
+  display: block;
+  width: 95%;
+  margin-bottom: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button#submit-btn:hover {
+  color: #2f3136;
+  background-color: #378239;
+  box-shadow: 0 0 10px #07a4c4fa;
+}
+
+button#submit-btn:active {
+  color: #2f3136;
+  background-color: #378239;
+  box-shadow: 0 0 10px #07a4c4fa;
+}
+
+button#reapply {
+  font-family: "JetBrains Mono", monospace;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button#reapply:hover {
+  color: #2f3136;
+  background-color: #378239;
+  box-shadow: 0 0 10px #07a4c4fa;
+}
