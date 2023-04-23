@@ -1,6 +1,9 @@
 
 document.getElementById("loginid").defaultValue = "Enter phone number or email";
-var x=1,id="login";
+let id="login";
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+ }
 function check()
 {
     if(document.getElementById("loginid").value=="")
@@ -12,19 +15,11 @@ function check()
     }
     else{
         console.log(id)
-        next_page()
+        otp_page()
     }
 }
-function otp_generation()
-{
-    x = Math.floor((Math.random() * 10000) + 1);
-    alert("Your OTP is"+x);
-}
-function next_page() {
+
+function otp_page() {
     location.replace("otp.html")
-    otp_generation()
   }
-function otp_position()
-{
-    console.log(x+"  "+id)
-}
+

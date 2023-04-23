@@ -1,0 +1,1 @@
+document.getElementById("password").defaultValue = "Enter your password";
