@@ -13,15 +13,19 @@
         <div class="flex justify-center">
             <div class="flex flex-col w-96 self-center py-64 gap-6 px-5">
                 <h1 class="text-2xl font-sans" style=" font-weight: 450;">Welcome back, Joel.</h1>
-                <input type="text" onfocus="this.value=''"  id="password" class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 p-4 outline-offset-1">
-            
+                <div class="flex flex-row place-content-between">
+                <input type="text" onfocus="this.value=''" id="password" class="text-lg w-80 font-sans h-12 rounded-l-lg bg-gray-200 p-4 outline-offset-1">
+                <button class="h-12 bg-gray-200 rounded-r-lg" onclick="toggle()">
+                    <i class="fa fa-eye" id="eye" style="font-size:24px"></i>
+                </button>
+                </div>
                 <button class="text-sm font-medium w-28 font-sans h-10 rounded-full bg-gray-200 hovering2" onclick="otp_generation()">More options</button>
                 <button class="text-sm font-medium w-40 font-sans h-10 rounded-full bg-gray-200 hovering2" onclick="otp_generation()">I forgot my password</button>
                 <div class="flex flex-row place-content-between">
-                    <button class="text-sm font-medium w-12 font-sans h-12 rounded-full bg-gray-200 hovering2" onclick="index_page()">
+                    <button class="text-sm font-medium w-12 font-sans h-12 rounded-full bg-gray-200 hovering2" onclick="otp_page()">
                         <i class="fa fa-arrow-left" style="font-size:20px"></i>
                     </button>
-                    <button class="text-sm font-medium w-24 font-sans h-12 rounded-full bg-gray-200 hovering1" onclick="otp_check()">
+                    <button class="text-sm font-medium w-24 font-sans h-12 rounded-full bg-gray-200 hovering1" onclick="next_page()">
                         <div class="flex flex-row place-content-center space-x-1">
                         <p class="text-lg font-sans py-2 font-thin text-gray-400">
                             Next
