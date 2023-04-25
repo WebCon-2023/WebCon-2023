@@ -6,9 +6,9 @@ This is a Flickr website clone that is visually similar to the original website.
 To get started with this project, simply clone the repository to your local machine. All of the necessary files are included in the repository.
 
 
-    git clone https://github.com/your-username/flickr-clone.git
+    git clone https://github.com/rohit-s-s/WebCon-2023.git
 # Usage
-To use the Flickr website clone, simply open the index.html file in your web browser.
+To use the Flickr website clone, simply open the index.html from Diving into JavaScript and TypeScript/Task 3/Rohith/ file in your web browser.
 
 # Pages
 
