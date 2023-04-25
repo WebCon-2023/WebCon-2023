@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flicker | Profile</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="img/png" href="assests/flickr (4).png">
+    <script src="https://kit.fontawesome.com/57efc2f9b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+
+    <header id="header" class="flex justify-around bg-black text-white h-1">
+
+        <div class="flex">
+            <img id="img" class="cursor-pointer" onclick="location.href = 'Home.html';" src="assests/flickr.png" alt="">
+            <a style="margin-top: 24px;padding-right: 2rem;padding-left: 2rem;" href="#">View</a>
+            <a style="margin-top: 24px;padding-right: 2rem;" href="#">Explore</a>
+            <a style="margin-top: 24px;padding-right: 2rem;" href="#">Prints</a>
+            <a style="margin-top: 24px;padding-right: 2rem;" href="#">Get Pro</a>
+        </div>
+
+        <div class="flex">
+            <input id="input" class="border-none rounded-sm outline-none border-2 px-3 my-2" type="text"
+                placeholder="https://wploadww.flickr.com/u">
+            <i id="png" class="fa-solid fa-cloud-arrow-up cursor-pointer"></i>
+            <i id="bell" class="fa-solid fa-bell cursor-pointer"></i>
+            <button onclick="location.href = 'profile.html';"><img id="profile" src="assests/profile.jpg" alt="profile">
+            </button>
+        </div>
+
+
+    </header>
+    <section class="text-center place-items-center" style="height: 39rem;">
+        <!--backgound image-->
+        <section style="background-image: url(https://combo.staticflickr.com/pw/images/coverphoto00_h.jpg.v3);">
+            <div style="    padding-top: 60px;position: relative;">
+                <div
+                    style="    display: flex;    align-items: flex-end;box-sizing: border-box;margin-left: auto; margin-right: auto;max-width: 80%;color: #fff;height: 120px;position: relative;height: auto;">
+                    <!--avatar container-->
+                    <div style="flex: 0 0 auto;">
+                        <div
+                            style="height: 100px;margin-right: 12px;width: 100px;float: left;margin: 0 15px 14px 0;align-items: center;display: flex;height: 100%;justify-content: center;padding: 0;width: 100%;">
+                            <button onclick="location.href = 'profile.html';"><img
+                                    src="https://combo.staticflickr.com/pw/images/buddyicon06_r.png#198157442@N06"
+                                    alt="profile"
+                                    style="left: auto; margin: 2; top: auto; border-radius: 50%; height:7rem">
+                        </div>
+                    </div>
+                    <!--text container-->
+                    <div style="flex: 1 1 auto;margin-bottom: 20px;min-width: 0;">
+                        <!--usermame-->
+                        <div style="align-items: center;display: flex;margin-bottom: 8px;">
+                            <h1
+                                style="margin: 0 12px 0 0;max-width: 100%;font-size: 36px;line-height: 44px;font-weight: 300;">
+                                Username</h1>
+                            <i class="fa-light fa-square-ellipsis cursor-pointer"></i>
+                        </div>
+                        <!--following box-->
+                        <div style="display: flex;justify-content: space-between;padding-right: 2rem;">
+                            <div style="align-items: center;display: flex;min-width: 0;">
+                                <p style="padding-right: 2rem">Username</p>
+
+                                <div style="padding-right: 2rem">
+                                    <a class="hover:underline" style="padding-right: 2rem" href="#">Followers</a>
+                                    <a class="hover:underline" style="padding-right: 2rem" href="#">Following</a>
+                                </div>
+                            </div>
+                            <div style="align-items: center;display: flex;">
+                                <p style="padding-right: 2rem">Photos</p>
+                                <p style="padding-right: 2rem">Joined 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section>
+            <div class="bg-white flex"
+                style="height: 3rem;padding-left: 8rem;padding-top: 0.75rem;color: grey;border-bottom: 1px solid;border-color: rgba(91, 88, 88, 0.384);">
+                <div class="flex justify-start" style="width: 80%;">
+                    <a style="padding-right: 2rem;" href="#">About</a>
+                    <a style="padding-right: 2rem;" href="#">Photostream</a>
+                    <a style="padding-right: 2rem;" href="#">Albums</a>
+                    <a style="padding-right: 2rem;" href="#">Faves</a>
+                    <a style="padding-right: 2rem;" href="#">Galleries</a>
+                    <a style="padding-right: 2rem;" href="#">Groups</a>
+                    <a style="padding-right: 2rem;" href="#">Stats</a>
+                    <a style="padding-right: 2rem;" href="#">Camera Roll</a>
+                </div>
+            </div>
+            <div class="flex" style="padding-left:6rem;margin-top: 8px;color: grey;">
+                <p>Date Uploaded</p>
+                <p style="padding-left: 2rem;">Date preview</p>
+            </div>
+        </section>
+        <br>
+        <div
+            style="    height: 50px;margin-top: -20px; position: relative;width: 100%;margin-top: -20px;position: relative;width: 100%;">
+
+        </div>
+
+
+        </div>
+        <h1 style="font-size: 25px;">You have no public photos.</h1><br>
+        <h3>Your photostream is your public-facing portfolio. Set your photos to public using the Camera Roll
+            to<br>populate your photostream.</h3><br>
+
+        <button class="bg-blue-500 my-2 text-white rounded-md px-3 py-1 hover:bg-blue-500" style="height: 2.5rem;">Go to
+            Camera Roll</button>
+    </section>
+    <footer style="height: 3.5rem; background-color: black; color:grey">
+        <div class="flex justify-evenly" style="margin-top: 1rem;">
+            <a style="margin-top: 1rem;" href="#">About</a>
+            <a style="margin-top: 1rem;" href="#">Jobs</a>
+            <a style="margin-top: 1rem;" href="">Blog</a>
+            <a style="margin-top: 1rem;" href="">Developers</a>
+            <a style="margin-top: 1rem;" href="">Report abuse</a>
+            <a style="margin-top: 1rem;" style="margin-top: 1rem;" href="">Help</a>
+            <a style="margin-top: 1rem;" href="">Help Forum</a>
+            <a style="margin-top: 1rem;" href="">English</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr-Login</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="img/png" href="assests/flickr (4).png">
+</head>
+
+<body style="background-image: url(https://identity.flickr.com/img/033120190455-by-Henry.2edde7a9.jpg);">
+
+
+    <header class="bg-black text-white" style="height: 4rem;">
+        <div class="flex pl-12">
+            <button onclick="location.href = 'index.html';"><img style="padding-left: 3rem; height:4rem" id="log_icon"
+                    src="assests/flickr (1).png" alt="logo"></button>
+        </div>
+    </header>
+    <section style="margin-top: 100px;" class="grid grid-cols-2 gap-4 place-content-center text-center">
+        <form
+            style="right: 0px;width:100%;background-color:white; margin-top:auto; margin-bottom:auto; position:relative;border-radius:0.125rem;display:flex;flex-direction: column;padding:20px"
+            action="Home.html">
+            <img style="margin-left: auto;margin-right: auto;height: 2rem; width: 2rem;" src="assests/flickr (1).png"
+                alt="logo">
+
+            <p class="text-center" style="font-size: 20px;">Login to Flickr</p><br>
+
+            <input id="email" class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="text" placeholder="Email address"
+                required style="border-width: 1px; border-color:black; padding-right: 8rem;"><br>
+            <input id="password" class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="password"
+                placeholder="Password" required style="border-width: 1px; border-color:black; padding-right: 8rem;"><br>
+            <button id="next_button" class="bg-blue-500 my-2 text-white rounded-sm px-3 py-1 hover:bg-blue-500"
+                style="height: 2.5rem;font-weight: 550;">Next</button><br>
+
+            <span class="bottom-10 text-sm text-center">Not a Flickr member? <button
+                    onclick="location.href = 'sign.html';" class="cursor-pointer hover:underline">Sign up
+                    here.</button></span>
+        </form>
+        <div class="text-white flex justify-between mt-1">
+            <div>
+                <a href="#">English</a>
+            </div>
+
+            <div>
+                <a class="pl-2" href="#">Help</a>
+                <a class="pl-2" href="#">Privacy</a>
+                <a class="pl-2" href="#">Terms</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
