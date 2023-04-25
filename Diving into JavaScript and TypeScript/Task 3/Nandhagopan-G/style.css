@@ -16,7 +16,7 @@ body{
 /* nvbar */
 
 
-/*--------------- Navbar styling for screens up to 500px wide ---------------*/
+/* Navbar styling for screens up to 500px wide */
 @media (max-width: 500px) {
     .navbar {
       height: auto;
@@ -113,7 +113,7 @@ body{
     }
   }
   
-  /*--------------- Navbar styling for screens from 500px to 991px wide ---------------*/
+  /* Navbar styling for screens from 500px to 991px wide */
   @media (min-width: 500px) and (max-width: 991px) {
     .navbar {
       height: auto;
@@ -224,7 +224,7 @@ body{
     }
   }
   
-  /*--------------- Navbar styling for screens from 992px wide and up ---------------*/
+  /* Navbar styling for screens from 992px wide and up */
   @media (min-width: 992px) {
     .navbar{
 		width: 100%;
@@ -319,7 +319,7 @@ body{
   }
   
 
-/*--------------- carousel slider ---------------*/
+/* carousel slider */
 
 .carousel-container{
 	position: relative;
@@ -369,7 +369,7 @@ body{
 }
 
 
-/*--------------- movie cards ---------------*/
+/* movie cards */
 
 .movie-title{
 	padding-left: 50px;
@@ -575,10 +575,9 @@ body{
 
 
 
-/*---------------- Login-page ----------------*/
+/* Login-page*/
 
-
-/*---------------- login styling for screens up to 500px wide ----------------*/
+/* login styling for screens up to 500px wide */
 @media (max-width: 500px) {
 .login-page{
 	align-items: center;
@@ -637,7 +636,7 @@ body{
 }
 
 }
-/*---------------- Navbar styling for screens from 500px to 991px wide ----------------*/
+/* Navbar styling for screens from 500px to 991px wide */
 @media (min-width: 500px) and (max-width: 991px) {
 	.login-page{
 		align-items: center;
@@ -696,7 +695,7 @@ body{
 	}
 
 }
-  /*---------------- Navbar styling for screens from 992px wide and up ----------------*/
+  /* Navbar styling for screens from 992px wide and up */
   @media (min-width: 992px) {
 	.login-page{
 		align-items: center;
@@ -757,4 +756,6 @@ body{
 
   }
 
-/*---------------- css end ----------------*/
+/* css end 
+https://help.hotstar.com/in/en/support/search?term=login
+*/
