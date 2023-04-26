@@ -103,7 +103,7 @@ nav button{
 }
 .box-content{
     background-color: #021022;
-   
+   overflow: hidden;
     /* width: 100%; */
     padding-top: 20px;
     padding-left: 20px;
@@ -306,7 +306,7 @@ input[type ="radio"]{
     align-items: flex-start;
     padding: 10px 0;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 820px){
     
 
 .footer .col {
@@ -318,11 +318,12 @@ input[type ="radio"]{
 }
     .faq{
         margin-left: 20px;
+        margin-top: 2300px;
     }
     
 
     .features{
-        margin-top: -50%;
+        margin-top: 10%;
         height: fit-content;
         
     }
@@ -349,10 +350,15 @@ input[type ="radio"]{
         width: 353px;
         
     }
+    .email-sigup input{
+        width: 180px;
+        
+    }
     .email-sigup button{
         font-size: medium;
         font-weight: bold;
         padding: 10px;
+        
         border-radius: 4px;
     }
     .row{
@@ -380,5 +386,10 @@ input[type ="radio"]{
 
 
     
+}
+
+
+@media screen and (max-width: 400px){
+
 }
 

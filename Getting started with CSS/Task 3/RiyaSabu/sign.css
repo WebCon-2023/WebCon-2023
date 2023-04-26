@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 body{
+
+    overflow: hidden;
      background-color: #020e1c;
      color: #fff;
      position: relative;
