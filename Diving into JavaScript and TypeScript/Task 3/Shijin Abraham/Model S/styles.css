@@ -1,0 +1,427 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: black;
+}
+
+.FP {
+    height: 100vh;
+    background-image: url(Model-S-Main-Hero-Desktop-LHD.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.interior {
+    height: 100vh;
+    background-image: url(Model-S-Interior-Hero-Desktop-LHD.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.SP {
+    height: 100vh;
+    background-image: url(Model-S-Specs-Hero-Desktop-LHD.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -15vh 15vh;
+}
+
+h1, #sub {
+    text-align: center; 
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sub {
+    font-size: x-large;
+    position: relative;
+    bottom: 3vh;
+}
+
+nav {
+    position: relative;
+    bottom: 1.5em;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.options {
+    flex: 1;
+    text-align: center;
+    padding-left: 15vh;
+}
+
+.options li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.options li a {
+    text-decoration: none;
+    color: black;
+}
+
+#Shop, #Account, #Menu {
+    text-decoration: none;
+    color: black;
+}
+
+.Order-Now, .Test-Drive {
+    display: inline;
+    margin: 10px;
+    height:2.5rem;
+    width: 18rem;
+    position: relative;
+    top: 24vh;
+    border: 0;
+    border-radius: 3px;
+}
+
+.Buttons {
+    text-align: center;
+    margin-bottom: 5px; 
+}
+
+.Order-Now {
+    background-color: rgba(23, 26, 32, 0.8);
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.Test-Drive {
+    background-color: rgba(244, 244, 244, 0.65);
+    backdrop-filter: blur(8px);
+    color: black;
+}
+
+.logo {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    top: 5vh;
+    left: 4vh;
+    z-index: 1; 
+}
+
+.range, .acc, .speed, .power {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 45px; 
+}
+
+.overview {
+    text-align: center;
+    position: relative;
+    top: 30vh;
+}
+
+#range, #acc, #speed, #power {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#p-range, #p-acc, #p-speed, #p-power {
+    margin-top: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.button {
+    height: 2.3rem;
+    width: 15rem;
+    color: white;
+    background-color: black;
+    border: 3px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    top: 12vh; 
+}
+
+
+#mod-s-spec {
+    text-align: center;
+    color: white;
+    width: 10em;
+    font-size: xx-large;
+    position: relative;
+    top: 10vh;
+    left: 53.5vw; 
+}
+
+#S-plaid, #S {
+    position: relative;
+    left: 58vw;
+}
+
+
+.details {
+    color: white;
+    padding-left: 55vw;
+    padding-top: 17vh;
+    display: block; 
+}
+
+.det-specsp, .det-specs {
+    float: left;
+    width: 50%;
+}
+
+.det-specs {
+    display: none;
+}
+
+.spec-p {
+    position: relative;
+    bottom: 20px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    position: relative;
+}
+
+.list>li:after {
+    content: "";
+    position: absolute;
+    bottom: 12vh;
+    left: 0;
+    border-top: 1px solid white;
+    width: 15%;
+}
+
+.a-hov {
+    height: 1rem;
+    width: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.a-hov:hover {
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+} 
+
+aside {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 240px;
+    background-color: #fff;
+    padding: 50px 40px;
+    z-index: 4;
+    height: 100vh;
+}
+
+
+aside button.close {
+    font-size: 32px;
+    border: 0;
+    height: 1em;
+    background-color: transparent;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
+}
+
+.Menu {
+    padding: 10px;
+    margin-top: 10px;
+    height: 0.5rem;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Menu:hover {
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.close:hover {
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.anim {
+    opacity: 0;
+    transition: opacity 0.75s ease-in;
+}
+
+.anim.appear {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .FP {
+        height: 100vh;
+        background-image: url(Model-S-Main-Hero-Mobile-LHD.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    
+    .interior {
+        height: 100vh;
+        background-image: url(Model-S-Interior-Hero-Desktop-LHD.jpeg);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    
+    .SP {
+        height: 100vh;
+        background-image: url(Model-S-Specs-Hero-Mobile-LHD\ \(1\).jpeg);
+        background-size: contain;
+        background-position: center -1vh;
+    }
+
+    .a-hide {
+        display: none;
+    }
+
+    .Menu>a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .Order-Now, .Test-Drive, .Order-Now1, .Test-Drive1 {
+        display: inline;
+        margin: 10px;
+        height:2.5rem;
+        width: 18rem;
+        position: relative;
+        top: 35vh;
+        border: 0;
+        border-radius: 3px;
+    }
+
+    .B-New {
+        position: relative;
+        top: 65vh;
+    }
+
+    #Menu {
+        border-radius: 1px;
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+        position: relative;
+        top: 1vh;
+    }
+
+    .button {
+        height: 2.3rem;
+        width: 43vw;
+        color: white;
+        background-color: black;
+        border: 3px solid grey;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        top: 35vh; 
+        z-index: 999;
+    }
+    
+    
+    #mod-s-spec {
+        text-align: left;
+        color: white;
+        width: 10em;
+        font-size: xx-large;
+        position: relative;
+        left: 5vw;
+        top: 35vh; 
+    }
+    
+    #S-plaid, #S {
+        position: relative;
+        left: 5vw;
+    }
+    
+    
+    .details {
+        color: white;
+        padding-left: 0vw;
+        padding-top: 38vh;
+        display: block;
+        animation: fadeIn 2s;
+        position: relative;
+        right: 5vw;
+    }
+
+    aside {
+        display: none;
+        position: fixed;
+        right: 0;
+        width: 40vw;
+        background-color: #fff;
+        padding: 50px 40px;
+        z-index: 4;
+        height: 100vh;
+    }
+
+    #Menu {
+        margin-right: 20px;
+    }
+     
+    .Float {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list>li:after {
+        border: none;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    #Account, #Shop {
+        color: black;
+    }
+
+}
