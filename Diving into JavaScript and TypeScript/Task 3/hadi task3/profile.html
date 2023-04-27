@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Zoom</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <header  class="bg-yellow-600">
+        <div class="justify-end flex ">
+            <div class="relative">
+                <h1 class="text-black hover:text-green-900 mx-6 p-4 mt-5 font-serif cursor-pointer profile" onclick="toggleMenu()">Profile ▼</h1>
+                <div id="menu" class="absolute hidden bg-white py-2 rounded shadow-md">
+                    <a href="#">contact info</a>
+                    <a href="#">profile change</a>
+                    <a href="#">get info</a>
+                </div>
+            </div>
+            <img src="cont.png" class="w-24 cursor-pointer p-5 mix-blend-color-burn font-semibold">
+        </div>
+    </header>
+    <hr>
+    <div class="float-right w-1/3 bg-gray-200 rounded-full photo">
+        <p></p><br>
+        <img src="dis.jpeg" alt="" class="w-96 p-3 mt-28 -ml-20 mix-blend-color-burn photo1">
+        <p class="mt-28 "></p><br>
+    </div>
+    <div class="float-left write">
+        <h1 class="text-5xl p-7 font-semibold font-serif text-red-950 col-1">Hello User,</h1>
+        <h1 class="text-8xl px-7 font-semibold font-serif text-blue-950 col-2">Welcome</h1>
+        <h1 class="text-5xl p-7 font-semibold font-serif text-blue-500 col-3">to your PROFILE</h1>
+        <button class="bg-green-300 mt-7 p-4 mx-32 rounded-2xl hover:bg-green-600 col-4">Join the meeting</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
