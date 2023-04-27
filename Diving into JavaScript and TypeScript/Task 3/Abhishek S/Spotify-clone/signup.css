@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.logo img {
+    width: 120px;
+    margin: 25px auto;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.facebook,
+.google {
+    border-radius: 50px;
+    width: 370px;
+    height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facebook {
+    background-color: #265691;
+    border: 1px solid #0547d5;
+}
+
+.google {
+    border: 1px solid grey;
+}
+
+i {
+    padding: 10px;
+}
+
+#grey {
+    color: grey;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lline,
+.rline {
+    background-color: rgb(210, 205, 205);
+    width: 150px;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.lline {
+    margin-right: 10px;
+}
+
+.rline {
+    margin-left: 10px;
+}
+
+.or {
+    font-size: 14px;
+    color: rgb(106, 104, 104);
+    margin: 2px 10px 2px 10px;
+}
+
+form {
+    width: 420px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    margin: 10px 0 10px 0;
+    width: 95%;
+    min-height: 2em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+form a {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#dis {
+    text-align: left;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    margin: 10px 0px;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 10px 10px 0px;
+}
+
+.check {
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check label {
+    font-weight: normal;
+}
+
+.terms,
+.terms a {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(0, 192, 0);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signup a {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer {
+    margin-bottom: 30px;
+    ;
+}
+
+.green {
+    color: rgb(0, 192, 0);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .facebook,
+    .google,
+    form {
+        width: 300px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .lline,
+    .rline {
+        width: 100px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .facebook,
+    .google,
+    form {
+        width: 270px;
+    }
+
+    .lline,
+    .rline {
+        width: 80px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 270px;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

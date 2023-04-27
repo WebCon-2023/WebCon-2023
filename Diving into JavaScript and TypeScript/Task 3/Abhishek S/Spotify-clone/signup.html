@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/9d4aef4753.js" crossorigin="anonymous"></script>
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="#">
+            <img src="images/logo.png" alt="Spotify Logo">
+        </a>
+    </div>
+    <h2>Sign up for free to start listening</h2>
+    <div class="facebook">
+        <p><a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: white;"></i>CONTINUE WITH FACEBOOK</a></p>
+    </div>
+    <div class="google">
+        <p><a href="#" id="grey"><i class="fa-brands fa-google fa-xl" style="color:rgb(255, 0, 0);"></i>CONTINUE WITH
+                GOOGLE</a></p>
+    </div>
+    <div class="divider">
+        <div class="lline"></div>
+        <div class="or">or</div>
+        <div class="rline"></div>
+    </div>
+    <span></span>
+    <form>
+        <label>What's your email?</label>
+        <input type="email" placeholder="Enter your mail">
+        <a href="#" class="green">Use phone number instead</a>
+        <label>Confirm your mail</label>
+        <input type="email" placeholder="Enter your mail again ">
+        <label>Create a password</label>
+        <input type="password" placeholder="Password">
+        <label>What should we call you?</label>
+        <input type="text" placeholder="Enter a profile name">
+        <p id="dis">This appears on your profile.</p>
+        <label>What's your date of birth?</label>
+        <input type="date">
+        <div class="gender">
+            <label>What's your gender?</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="not-say">Prefer not to say
+        </div>
+
+        <div class="check">
+            <input type="checkbox" checked><label>I agree to Spotify's Terms and Conditions of Use.</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" checked><label>I agree to Spotify's Privacy Policy.</label>
+        </div>
+        <p class="terms">By clicking on sign-up, you agree to Spotify's <a href="#" class="green">Terms and Conditions of
+                Use.</a></p>
+        <p class="terms">To learn more about how Spotify collects, uses, shares and protects your personal data, please see
+            Spotify's
+            <a href="#" class="green">Privacy Policy.</a>
+        </p>
+        <div class="signup">
+            <input type="submit" value="SIGN UP">
+        </div>
+        <p id="footer">Already have an account? <a href="login.html" class="green">Log in</a></p>
+    </form>
+    <script src="signup.js"></script>
+</body>
+
+</html>

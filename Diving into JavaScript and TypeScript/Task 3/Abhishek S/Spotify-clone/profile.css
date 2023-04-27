@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+nav {
+    height: 65px;
+    background-color: #060606;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav img {
+    margin-left: 6%;
+    width: 35%;
+}
+
+.right {
+    margin-right: 30px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30%;
+    position: relative;
+    top: 100px;
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 8%;
+}
+
+#username,
+#email,
+#dob,
+#country {
+    margin-bottom: 3%;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin-bottom: 5%;
+}
+
+.free {
+    background-color: #f5f5f5;
+    color: white;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 2%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 35%;
+    margin: 1% 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+    padding: 1.5% 1.2% 1.5% 2%;
+    background-color: black;
+    width: 97%;
+    box-sizing: border-box;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2% 0;
+    flex: 1;
+}
+
+.head {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 13%;
+
+}
+
+.info p {
+    padding: 5%;
+}
+
+.social p {
+    padding-top: 4%;
+    padding-right: 1%;
+    padding-left: 6%;
+    flex: 1;
+}
+
+.company,
+.communities,
+.links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 4% 2% 5%;
+    flex: 1;
+    left: -8%;
+}
+
+#head {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.lower {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.5% 1.2% 1.5% 2%;
+}
+
+.lower a {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 1.5% 1.2% 1.5% 3%;
+}
+
+#dis {
+    font-size: 12px;
+}
+
+#download {
+    margin-right: 10px;
+}
