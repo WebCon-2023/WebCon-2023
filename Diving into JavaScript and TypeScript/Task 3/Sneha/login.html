@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netflix</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="icon" href="images/icon.png">
+  
+
+</head>
+<body>
+    
+	<div class="background">
+        <img src="images/logo.png" class="logo">
+		<div class="container">
+			<h1>Sign In</h1>
+			<form>
+				
+				<input type="text" id="email" name="email" placeholder="Email or phone number" required>
+			
+				<input type="password" id="password" name="password" placeholder="Password" required>
+				
+				<button type="submit"><a href="#" onclick="navigateToSecondPage()">Sign In</a></button>
+                <script>
+                    function navigateToSecondPage() {
+                      // Navigate to the second page
+                      window.location.href ='profile.html';
+                    }
+                </script>
+                <div class="checkbox-group">
+					<input type="checkbox" id="remember-me" name="remember-me">
+					<label for="remember-me">Remember me</label>
+                    <a href="#" class="need-help">Need help?</a>
+				</div>
+				
+			</form>
+			<p>New to Netflix? <a href="#"><font color="#fff">Sign up now </font></a>.</p>
+            <p> This page is protected by Google reCAPTCHA to ensure you're not a bot.
+              <p>
+                <a href="#" onclick="toggleStatement()"><font color="blue">Learn More</font></a>
+              </p>
+              <p id="statement" style="display:none;">The Information collected by Google reCAPTCHA is subject to the Google <font color="blue">Privacy policy</font> and <font color="blue">Terms of Service</font>, and is used for providing the reCAPTCHA service and for general security purposes(it is not used for personalised advertising by Google)</p>
+            </p>
+            <script>
+              
+              function toggleStatement() {
+                var statement = document.getElementById("statement");
+                if (statement.style.display === "none") {
+                  statement.style.display = "block";
+                } else {
+                  statement.style.display = "none";
+                }
+              }
+            </script>          
+		</div> 
+    <div class="footer">
+      <h2>Questions? Call 000-800-919-1694
+      </h2>
+      <div class="container2">
+        <div>FAQ</div>
+        <div>Help Centre</div>
+        <div>Terms of Use</div>
+        <div>Privacy</div>
+        <div>Cookie Preferences</div>
+        <div>Corporate information</div>
+        <div></div>
+        <div></div>
+        <div></div>
+  
+      </div>
+      
+      <button>English</button>
+    </div>
+    
+
+    
+      
+    
+
+
+  </div>
+
+
+</body>
+</html>
