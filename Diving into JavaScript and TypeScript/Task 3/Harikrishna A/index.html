@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Title">Tweetter</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.png">
+</head>
+<body class="bg-black text-white relative">
+    <!-- Home Page -->
+    <div class="flex flex-row">
+        <header class="h-screen  flex flex-row-reverse w-[27.59375%] max-[1420px]:w-[12%] max-[1050px]:w-[8%] max-[1000px]:w-[20%] max-[765px]:w-[10%] max-[510px]:hidden">
+            <div class="h-screen w-[275px] p-2 gap-2 flex flex-col max-[1420px]:w-[88px] max-[670px]:p-0">
+                <div class="h-fit w-full flex flex-col" >
+                    <img class="w-[30px] h-[30px] cursor-pointer max-[760px]:self-center"  src="./Icons/icon.png"></img>
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]"><img src="./Icons/archway (1).svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Explore</span></div></div>
+
+                    <div class="h-[50.25px] p-3" onclick="RedirectLink()"><div class="w-[152px] h-[46px] flex flex-row gap-3 cursor-pointer px-2 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]"><img src="./Icons/icons8-settings.svg" alt=""><span class="justify-center text-xl max-[1420px]:hidden">Settings</span></div></div>
+                </div>
+            </div>
+        </header>
+        <main class="h-screen grow  max-[660px]:w-full">
+            <div class="flex flex-row gap-[38px]  max-[660px]:w-full">
+                <div class="w-[598px]  h-screen relative border-x border-gray-700 max-[510px]:w-screen  max-[660px]:w-full ">
+                    <div class="h-[56px] w-full z-10 absolute bg-black bg-opacity-60 flex px-8 max-[510px]:bg-opacity-100 max-[510px]:px-2 backdrop-blur-lg">
+                        <span class="grow self-center text-xl font-bold max-[510px]:hidden ">Explore</span>
+                        <span class="rick w-[19px] h-[19px]  self-center max-[510px]:hidden cursor-pointer" ><img src="./Icons/icons8-settings.svg" alt=""></span>
+                        <div class="hidden flex-row grow max-[510px]:flex">
+                            <div class="w-[34px] h-[34px]  self-center"> <img src="./Icons/icon.png" alt=""></div>
+                            <div class="grow flex px-2"><input class="grow  h-[24px] self-center rounded-full bg-gray-600 px-3"  type="text" placeholder="Search Twitter"></div>
+                            <a class="w-[34px] h-[34px]  max-[510px]:flex self-center"><img src="./Icons/bars.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="h-screen w-full flex-col pt-11 overflow-auto scrollbar max-[680px]:w-11/12 max-[485px]:w-screen" >
+                        <!-- Tweet Cards -->
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer ' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson1.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatTechGuy</span>
+                                <span>Will These AI Take Our Job</span>
+                                <img class="w-full h-[336px]  rounded-md" src="./Images/RandomTwt1.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson2.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatCelebrityGuy</span>
+                                <span>"Just got my hands on the new ride and I am LOVING it! Thanks to my amazing team for hooking me up with the latest and greatest. Can't wait to hit the road and show this baby off 🚗💨 #newcar #blessed #grateful"</span>
+                                <img class="w-full h-[336px]  rounded-md mt-3" src="./Images/RandomTwt2.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson3.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatInfluencer</span>
+                                <span>A great Morning</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt3.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson4.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatOnwer</span>
+                                <span>Me waiting for my life to take off like that rocket, but instead it crashes and burns 🔥🚀😩 #failedmission #disappointed #backtorealityg</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt4.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer mb-20' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson5.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">Whoami</span>
+                                <span>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. Don't let the fear of failure hold you back from achieving your dreams. Remember, every successful person has failed at some point, but they didn't let their failures define them. They used them as stepping stones to get to where they are today. So take risks, embrace your failures, learn from your mistakes, and keep moving forward. The road to success is not easy, but it's worth it.</span>
+
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+                                </div>
+                            </div>
+                        </div>
+
+        
+                        
+                        
+                    </div>
+                </div>
+                <div class="h-screen w-[350px] max-[1135px]:w-[275px] max-[1000px]:hidden">
+                    <div class="pt-[12px] pb-[64px] h-[438px] ">
+                        <div class="h-[240px] w-full border border-gray-700 rounded-2xl flex flex-col">
+                            <div class=" w-full p-2"><span class="font-bold text-xl">New to Tweetter?</span></div>
+                            <div class="mx-[16px] my-[12px]">
+                                <div class="bg-white px-[16px] rounded-full h-[40px] w-[300px] max-[1135px]:w-[245px] hover:bg-[#cbced0] cursor-pointer" onclick="RedirectLink()"><div class="flex w-full h-full items-center justify-center"><span class="text-black">Sign in with Google</span></div></div>
+                                <div class="bg-white px-[16px] rounded-full h-[40px] w-[300px] mt-3 max-[1135px]:w-[245px] hover:bg-[#cbced0] cursor-pointer" onclick="RedirectLink()"><div class="flex w-full h-full items-center justify-center"><span class="text-black">Sign in with Apple</span></div></div>
+                                <div class="bg-white px-[16px] rounded-full h-[40px] w-[300px] mt-3 max-[1135px]:w-[245px] hover:bg-[#cbced0] cursor-pointer" onclick="Launchpage('Signup 1')"><div class="flex w-full h-full items-center justify-center"><span class="text-black">Create Account</span></div></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="w-screen h-[72px] bg-[#1d9bf0] absolute bottom-0 text-white flex flex-row max-[510px]:h-[64.8px] max-[510px]:bg-black max-[510px]:border-t max-[510px]:border-gray-800">
+        
+            <div class="w-[27.59375%] h-full max-[1420px]:w-[12%] max-[1050px]:w-0"></div>
+            <div class=" my-[12px]">
+                <div class="w-screen flex flex-row ">
+                    <span class="text-lg font-bold w-[70%] ml-5 max-[1000px]:w-[30%] max-[765px]:hidden">Don't know whats going on?</span>
+                    <a class="h-[36px] w-[76px] border border-white text-center rounded-full pt-1 ml-2 max-[765px]:grow max-[510px]:bg-[#000000] max-[510px]:border-gray-700 max-[510px]:text-blue-700 max-[510px]:font-bold hover:bg-[#49b6ffdd] cursor-pointer"  onclick="Launchpage('Signin','Signin')"><span>Log in</span></a>
+                    <a class="h-[36px] w-[76px] border border-white bg-white text-black text-center rounded-full pt-1 ml-2 mr-2 max-[765px]:grow max-[510px]:bg-[#1d9bf0] max-[510px]:border-gray-700 max-[510px]:text-white hover:bg-[#cbced0] cursor-pointer" onclick="Launchpage('Signup 1','Signup-now')"><span>Sign up</span></a>
+                </div>
+            </div>
+
+    </div>
+    
+
+
+
+
+
+    <!-- Signup Page 1/3 -->
+    <div class="h-screen w-full fixed left-0 top-0 justify-center items-center bg-white bg-opacity-20 z-50 hidden" id="Signup 1">
+        <title>Signup</title>
+        <div class="text-white bg-black rounded-3xl flex flex-col p-4 w-[600px] h-[650px] max-[690px]:w-screen max-[690px]:h-screen max-[690px]:rounded-none">
+            <div class="flex flex-row"><button class="p-2 hover:bg-gray-800 rounded-full" onclick="Closepage('Signup 1','Twitter')"><img  class="w-5 " src="./Icons/multiply.svg" alt="close"></button> <h1 class="grow font-bold p-2 text-lg">Step 1 of 2</h1></div>
+            <div class="flex flex-col gap-4 p-3 grow">
+                <h2 class="p-4 font-bold text-3xl">Create Account</h2>
+                <input class=" mx-4 bg-black outline outline-1 outline-gray-500 rounded-sm h-[53px] px-2 focus:outline-blue-600" type="text" id="Name-Signup" onblur="CheckTheField(event,'name')" placeholder="Name" required><!--cool animation to be add-->
+                <div class="hidden flex-row-reverse mx-4" id="Required name"><p class="text-red-600 text-xs">Required</p></div>
+                <input class="mx-4 bg-black outline outline-1 outline-gray-500 rounded-sm h-[53px] px-2 focus:outline-blue-600" type="text" id="PhoneNoField" onblur="CheckTheField(event,Field2)" placeholder="Phone Number" required>
+                <div class="hidden flex-row-reverse mx-4" id="Required email"><p class="text-red-600 text-xs">Invalid Phonenumber!</p></div>
+                <div class="flex flex-row-reverse" ><a class="text-right font-light mx-4 text-blue-400 cursor-pointer hover:underline" onclick="changeField2(event)">Use email instead</a></div>
+                <div class="mx-4 flex-col">
+                    <h2 class="font-bold text-3x1 py-3">Date of Birth</h2>
+                    <div class=" grow flex flex-row gap-2">
+                        <select class="grow w-2/3 h-11 bg-black border border-gray-500 rounded-sm p-2 text-gray-500 focus:border-blue-600 focus:text-white cursor-pointer"   name="Month" id="Month-Signup" oninput="CheckTheField(event,'datetime')">
+                            <option disabled selected>Month</option>
+                        </select>
+                        <select class="grow w-1/3 h-11 bg-black border border-gray-500 rounded-sm p-2 text-gray-500 focus:border-blue-600 focus:text-white cursor-pointer"   name="Day" id="Day-Signup" oninput="CheckTheField(event,'datetime')">
+                            <option disabled selected>Day</option>
+
+                        </select>
+                        <select class="grow w-1/3 h-11 bg-black border border-gray-500 rounded-sm p-2 text-gray-500 focus:border-blue-600 focus:text-white cursor-pointer"   name="Year" id="Year-Signup" oninput="CheckTheField(event,'datetime')">
+                            <option disabled selected>Year</option>
+                            <option >Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grow"></div>
+            </div>
+            <div class=" text-center flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold disabled:bg-gray-700 hover:bg-gray-400 "  disabled="true" onclick="NextAction(1)" id="Nextbtn 1" >Next</button></div>
+            
+        </div>
+        
+
+    </div>
+    <!-- Signup Page 2/3 -->
+    <div class="h-screen w-full fixed left-0 top-0 justify-center items-center bg-white bg-opacity-20 z-50 hidden" id="Signup 2">
+        
+        <div class="text-white bg-black rounded-3xl flex flex-col p-4 w-[600px] h-[650px] max-[690px]:w-screen max-[690px]:h-screen max-[690px]:rounded-none">
+            <div class="flex flex-row"><button class="p-2 hover:bg-gray-800 rounded-full" onclick="Closepage('Signup 2','Twitter')"><img  class="w-5 " src="./Icons/multiply.svg" alt="close"></button> <h1 class="grow font-bold p-2 text-lg">Step 2 of 3</h1></div>
+            <div class="flex flex-col gap-4 p-3 grow">
+                <h2 class="p-4 font-bold text-3xl">Create Your Password</h2>
+                <input class=" mx-4 bg-black outline outline-1 outline-gray-500 rounded-sm h-[53px] px-2 focus:outline-blue-600" type="text" id="New-Password" placeholder="New Password" onblur="CheckPassReq(event)"  onfocus="ChangeType()" required><!--cool animation to be add-->
+                <input class="mx-4 bg-black outline outline-1 outline-gray-500 rounded-sm h-[53px] px-2 focus:outline-blue-600" type="password" id="Retype-Password" placeholder="Re-type Password" onblur=" CheckPassMatch(event)" required>
+                <div class="hidden flex-row-reverse mx-4" id="InvalidPassword-Signup"><p class="text-red-600 text-xs">Invalid Password!</p></div>
+                <div class="hidden flex-row-reverse mx-4" id="Passwordmatcherror"><p class="text-red-600 text-xs">Password do not matched!</p></div>
+                
+
+                <div class="grow"></div>
+            </div>
+            <div class=" text-center flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold disabled:bg-gray-700 hover:bg-gray-400 "  disabled="true" onclick="NextAction(2)" id="Nextbtn 2" >Next</button></div>
+            
+        </div>
+
+
+    </div>
+    <!-- SignupPage 3/3 -->
+    <div class="h-screen w-full fixed left-0 top-0 justify-center items-center bg-white bg-opacity-20 z-50 hidden" id="Signup 3">
+        
+        <div class="text-white bg-black rounded-3xl flex flex-col p-4 w-[600px] h-[650px] max-[690px]:w-screen max-[690px]:h-screen max-[690px]:rounded-none">
+            <div class="flex flex-row"><button class="p-2 hover:bg-gray-800 rounded-full" onclick="Closepage('Signup 3','Twitter')"><img  class="w-5 " src="./Icons/multiply.svg" alt="close"></button> <h1 class="grow font-bold p-2 text-lg">Step 3 of 3</h1></div>
+            <div class="flex flex-col gap-4 p-3 grow">
+                <h2 class="p-4 font-bold text-3xl">Add Profile Picture</h2>
+                <input type="file" name="" id="Profie" hidden/>
+                <div class="w-full h-fit flex justify-center"><label class="bg-white self-center  h-[140px] w-[140px] rounded-full" for="Profile"></label></div>
+                <div class="w-full flex justify-center"><label for="image Upload">Upload Image:</label><input type="file" accept="image/*" ></div>
+                <div class="flex flex-col mx-16"><label class="text-sm" for="Description">Description:</label><textarea class="bg-gray-900 rounded-md"name="Description" id="Description" cols="8" rows="4"></textarea></div>
+                <div class="w-fit flex ml-20"><input type="checkbox" class="h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]" onclick="TermsCheck()" id="Termscheck"><label >I agree the Terms of Service</label></div>
+
+                
+
+                <div class="grow"></div>
+            </div>
+            <div class=" text-center flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold disabled:bg-gray-700 hover:bg-gray-400 "  disabled="true" onclick="NextAction(3)" id="Nextbtn 3" >Finish</button></div>
+            
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Signin Page -->
+    <div class=" h-screen w-full fixed left-0 top-0 justify-center items-center bg-white bg-opacity-20 hidden z-50"  id="Signin">
+        <div class="text-white bg-black rounded-3xl flex flex-col  p-1 w-[600px] h-[650px] max-[690px]:w-screen max-[690px]:h-screen max-[690px]:rounded-none">
+            <div class="flex flex-row"><button class="p-2 hover:bg-gray-800 rounded-full" onclick="Closepage('Signin','Twitter')"><img  class="w-5 " src="./Icons/multiply.svg" alt="close"></button> <h1 class="grow font-bold p-2 text-3xl text-center mr-4">Sign in to Twitter</h1></div>
+            <div class="flex flex-col gap-4 p-3 self-center w-[364px]">
+                <div class=" text-center mt-3 flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold  w-[300px] h-[44px] hover:bg-gray-400" onclick="RedirectLink()">Sign in with Google</button></div>
+                <div class=" text-center mt-3 flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold  w-[300px] h-[44px] hover:bg-gray-400" onclick="RedirectLink()">Sign in with Apple</button></div>
+                <div class="flex flex-row">
+                    <div class="grow self-center"><hr class=" border-gray-500"></div>
+                    <div class="px-2"><p>or</p></div>
+                    <div class="grow self-center"><hr class=" border-gray-500"></div>
+                </div>
+                <input class="grow mx-4 bg-black outline outline-1 outline-gray-500 rounded-sm h-14 px-2 focus:outline-blue-600" type="text" id="Email-Signin" placeholder="Email id">
+
+                <div class=" text-center mt-3 flex"><button class="bg-white rounded-full mx-6 py-3 text-black grow font-bold w-[300px] h-[44px] hover:bg-gray-400" onclick="NextSigninPage()">Next</button></div>
+                <div class=" text-center mt-1 flex"><button class="bg-black rounded-full mx-6 py-3 grow font-bold border border-1 w-[300px] h-[44px] hover:bg-gray-800" onclick="RedirectLink('forget')">Forget password?</button></div>
+                <div class="flex mt-8"><label class="text-gray-500" >Don't have an account?</label><span class="text-blue-400 cursor-pointer hover:underline" onclick="SwitchPage('Signin','Signup 1','Signup-now')">Sign up</span></div>
+            </div>
+            
+        </div>
+    </div>
+    <!--Final Login Page-->
+    <div class="z-50 h-screen w-full fixed left-0 top-0 justify-center items-center bg-white bg-opacity-20 hidden" id="Final Signin">
+        <div class=" text-white bg-black rounded-3xl flex flex-col h-[650px] p-1 w-[600px] max-[690px]:w-screen max-[690px]:h-screen max-[690px]:rounded-none ">
+            <div class="flex flex-row"><button class="p-2 hover:bg-gray-800 rounded-full" onclick="Closepage('Final Signin','Twitter')"><img  class="w-5 " src="./Icons/multiply.svg" alt="close"></button> <h1 class="grow font-bold p-2 text-3xl text-center mr-4">Sign in to Twitter</h1></div>
+            <div class="flex flex-col gap-4 pt-3 px-12  min-[590px]:self-center">
+                <label class="font-bold text-3xl">Enter your password</label>
+                <div class="bg-gray-900 text-gray-500 flex flex-col mt-4 px-2 py-2 rounded-md w-[446px] h-[55px] max-[590px]:w-full"><label>Email or Phone</label><label id="Sigin2emailid">Email Address</label></div>
+                <div class="flex flex-col border border-gray-500 "><label class="text-gray-500 text-lg mt-3 ml-3">Password</label><div class="grow flex flex-row"><input class="grow bg-black outline-none h-5 mx-2" type="password" id ="LoginPass"><button class="w-[30px] h-[30px]" onclick="eyebtn()"><img id="eyebtnimg" src="./Icons/eye.svg" ></button></div></div>
+                <span class="rick text-blue-400 hover:underline cursor-pointer">Forget password?</span>
+                
+            </div>
+            <div class="grow"></div>
+            
+            <div class=" text-center mt-48 flex self-center w-[446px] h-[49px] max-[590px]:w-5/6 "><button class="bg-white rounded-full py-3 text-black grow font-bold w-[446px] hover:bg-gray-400" onclick="SiginIntialization()">Log in</button></div>
+            <div class="flex mt-4 justify-center"><label class="text-gray-500" >Don't have an account?</label><span class="text-blue-400 cursor-pointer hover:underline" onclick="SwitchPage('Final Signin','Signup 1','Signup-now')">Sign up</span></div>
+        </div>
+    </div>
+
+<script src="./Js/index.js"></script>
+<script src="./Js/Signup.js"></script>
+<script src="./Js/Signin.js"></script>
+
+
+</body>
+</html>
