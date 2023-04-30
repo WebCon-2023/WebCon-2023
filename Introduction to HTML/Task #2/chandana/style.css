@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    height: 1300px;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+    background-color: rgb(18, 147, 104);
+
+}
+
+    
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 0;
+}   
+.content-table{
+   border-collapse: collapse; 
+   margin: 25px 0;
+   font-size: 0.9em;
+   min-width: 400px;
+   justify-content: space-between;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgb(75, 82, 80);
+   
+}
+.content-table thead tr{
+    background-color: rgb(170, 217, 202);
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 0.5px solid #dddddd;
+}
+div.main{
+    width: 450px;
+    margin: 100px auto 0px auto;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+
+}
+div.register{
+    background-color: rgb(89, 184, 140);
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px;
+}
+
+input[type=text]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=number]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=select]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=date]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=textarea]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=file]{
+    width: 200px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+input[type=submit]{
+    width: 100px;
+    padding: 3px;
+    outline: 0;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(200, 207, 204);
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+label,span,h2{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}

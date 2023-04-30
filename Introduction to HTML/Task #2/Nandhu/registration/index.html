@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="TechConnect Solutions" />
+    <meta
+      name="description"
+      content="This is a job offer for a web developer position."
+    />
+    <link rel="icon" href="../company_logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/registration-form.css" />
+    <meta name="keywords" content="web developer, job offer, web development" />
+    <title>TechConnect Solutions</title>
+  </head>
+  <body>
+    <noscript>
+      <div id="no-js">Please enable JavaScript to continue!</div>
+    </noscript>
+    <div id="root" style="display: none">
+      <main>
+        <form
+          action="/registration/submitted.html"
+          class="registration-form"
+          id="main-form"
+        >
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              rows="3"
+              placeholder="Address"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="language">Language Proficiency</label>
+            <select name="language" id="language" required>
+              <option value="" disabled selected>Select Proficiency</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="programming-languages"
+              >Known Programming Languages</label
+            >
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="js"
+                name="programming-languages"
+                value="language1"
+              />
+              <label for="language1">JavaScript &nbsp;</label>
+              <input
+                type="checkbox"
+                id="py"
+                name="programming-languages"
+                value="language2"
+              />
+              <label for="language2">Python &nbsp;</label>
+              <input
+                type="checkbox"
+                id="clang"
+                name="programming-languages"
+                value="language3"
+              />
+              <label for="language3">C/C++ </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required />
+          </div>
+          <div class="form-group">
+            <label for="summary">Brief Applicant Summary</label>
+            <textarea
+              name="summary"
+              id="summary"
+              rows="5"
+              placeholder="Summary"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Image Upload</label>
+            <input
+              type="file"
+              name="image"
+              id="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <button type="submit" id="submit-btn" onclick="submitForm()">
+            Submit
+          </button>
+        </form>
+        <div id="submitted" style="display: none">
+          <h1>Thank you for applying!</h1>
+          <p>
+            We will get back to you as soon as possible. Please check your email
+            for further instructions.
+          </p>
+          <button id="reapply" onclick="removeSubmission()">Re Apply</button>
+        </div>
+      </main>
+    </div>
+    
+    <script src="../scripts/buttons.js" defer></script>
+    <script src="../scripts/submitted.js" defer></script>
+    <script src="../scripts/enabled.js" defer></script>
+  </body>
+</html>

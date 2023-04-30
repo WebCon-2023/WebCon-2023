@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <style>
+        body 
+    
+        .introduction{
+            background-color: hsla(180, 67%, 84%, 0.576);
+            border: 3px outset #011217;
+            text-align: center;
+            width: 1000px;
+            height: 160px;
+            margin: auto;
+            border-radius: 15px;
+            font-size: 15px;
+            padding: 2px 20px 2px 20px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite
+        }
+        @keyframes example {
+            from{background-color: #C3EEFA;}
+            to {background-color: #27262a9f;}
+        }
+
+        .table{
+            width: 100%
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 70%
+
+        }
+        th, td {
+            text-align: left;
+            padding: 5px;
+            background-color: #f3546c44;
+        }
+
+        th {
+            background-color: #aaace4;
+            color: white;
+        }
+        .RegformTitle{
+            text-align: center;
+            width: 100%
+        }
+
+        form {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #533409e6;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        input[type="text"], input[type="tel"], input[type=":checked"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #7e93f3;
+            color: white;
+            padding: 10px 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+</style>
+    </head> 
+    <table>
+    <title>HIRING MANAGER OF APPLE COMPANY</title>
+    <h1>POSTING OF MANAGER</h1>
+  </head>
+ <body>
+    <img src="C:\Users\user\OneDrive\Desktop\Downloads\apple-logo.png" width="150" height="400">
+    <table>
+        <tr>
+            <th>Post</th>
+            <th>Salary</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Junior Software Developer</td>
+            <td>20000</td>
+            <td>Remote</td>
+        </tr>
+        <tr>
+            <td>Senior Software Developer</td>
+            <td>30000</td>
+            <td>Onsite</td>
+        </tr>
+        <tr>
+            <td>Software Tester</td>
+            <td>25000</td>
+            <td>Onsite</td>
+        </tr>
+    </table>
+    <h2 class="hirings">Register Now</h2>
+    <form class="regfrm" action="" method="post">
+
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="">
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="">
+
+        <label for="age">Age</label>
+        <input type="text" name="age" id="">
+
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" id="">
+
+        <label for="address">Address</label>
+        <input type="text" name="address" id="">
+
+        <label for="lanprof">Language Proficiency</label>
+        <select id="country" name="country">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="malayalam">Malayalam</option>
+        </select><br><br>
+
+        <label for="pgmlang">KNOWN Programming Languages</label><br>
+        <input type="checkbox" id="java" name="java" value="Java">
+        <label for="java"> Java</label><br>
+        <input type="checkbox" id="python" name="python" value="Python">
+        <label for="python"> Python</label><br>
+        <input type="checkbox" id="c++" name="c++" value="C++">
+        <label for="c++"> C</label><br><br>
+        
+
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" name="dob" id=""><br><br>
+
+        <label for="summary">Brief Applicant Summary</label>
+        <textarea name="summary" id="" cols="30" rows="10"></textarea><br><br>
+
+        <label for="imgup">Image Upload</label><br>
+        <input type="file" name="imgup" id=""><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>

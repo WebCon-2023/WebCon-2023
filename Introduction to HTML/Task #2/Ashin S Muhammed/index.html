@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Offer | Medusa Corp.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="./hussnainxxg-ee459285950de526da032f30b39f83be.jpg"
+        alt="medusa logo"
+      />
+    </div>
+    <p>
+      Welcome candidates to Medusa Corp. Your are free to review the available
+      packages from the table below. You may continue to fill and submit this
+      form if you wish to be one of us here at Medusa Corp.
+    </p>
+    <table>
+      <tr>
+        <td>Post</td>
+        <td>Salary</td>
+        <td>Location</td>
+      </tr>
+      <tr>
+        <td>Junior Software Developer</td>
+        <td>20000</td>
+        <td>Remote</td>
+      </tr>
+      <tr>
+        <td>Senior Software Developer</td>
+        <td>30000</td>
+        <td>Onsite</td>
+      </tr>
+      <tr>
+        <td>Software Tester</td>
+        <td>25000</td>
+        <td>Onsite</td>
+      </tr>
+    </table>
+    <h2>Registration Form</h2>
+    <form action="post">
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" id="fname" />
+      <br />
+      <label for="lname">Last Name: </label>
+      <input type="text" name="" id="lname" />
+      <br />
+      <label for="age">Age: </label>
+      <input type="number" name="" id="age" />
+      <br />
+      <label for="gender">Gender: </label>
+      <input type="radio" name="" id="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="" id="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="" id="others" />
+      <label for="others">Others</label><br />
+      <input type="text" name="" id="others" /><br />
+
+      <label for="address">Address: </label><br />
+      <textarea
+        type="text"
+        name="address"
+        id="address"
+        cols="35"
+        rows="6"
+      ></textarea
+      ><br />
+
+      <label for="langProf">Select Language Proficiency</label>
+      <select name="" id="langProf">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="excellent">Excellent</option></select
+      ><br />
+
+      <label for="prog_lang">Known Programming Languages: </label>
+      <br />
+      <input type="checkbox" id="java" name="progLang" value="Java" />
+      <label for="java">JAVA</label><br />
+      <input type="checkbox" id="python" name="progLang" value="Python" />
+      <label for="python">Python</label><br />
+      <input type="checkbox" id="c" name="progLang" value="C" />
+      <label for="c">C</label><br />
+      <input type="checkbox" id="cpp" name="progLang" value="C++" />
+      <label for="cpp">C++</label><br />
+      <input type="checkbox" id="html" name="progLang" value="html" />
+      <label for="html">HTML</label><br />
+
+      <label for="DoB">Date of Birth: </label>
+      <input type="date" name="" id="DoB" /><br />
+
+      <label for="summary"> Brief applicant summary:</label>
+      <textarea
+        type="text"
+        id="summary"
+        name="summary"
+        cols="50"
+        rows="8"
+      ></textarea
+      ><br />
+
+      <label for="fileUpload">Upload your image: </label>
+      <input type="file" name="" id="fileUpload" />
+      <input type="submit" value="all good" />
+    </form>
+  </body>
+</html>

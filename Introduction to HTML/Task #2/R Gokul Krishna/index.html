@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>GET HIRED NOW!</title>
+    </head>
+    <body text="black" topmargin="40px" bottommargin="10px" leftmargin="10px" rightmargin="10px">
+        <img src="rgk.jpg" height="70px" alt="company logo" loading="eager" align="right" border="10px">
+        <br>
+        <br>
+    
+
+
+
+    <table align="center" bgcolor="white"border="10px" cellpadding="10px" width="1220px" overflow-x:auto>
+        <thead>
+            <tr align="center">
+                <th colspan="3" bgcolor="white">JOB DETAILS</th>
+            </tr>
+        </thead>
+        <tr align="char" bgcolor="sky blue">
+            <th scope="col">POST</th>
+            <th scope="col">SALARY</th>
+            <th scope="col">LOCATION</th>
+        </tr>
+
+        <tr align="char">
+            <td>Junior Software developer</td>
+            <td>20000</td>
+            <td>Remote</td>
+        </tr>
+
+        <tr align="char">
+            <td>Senior Software Developer</td>
+            <td>30000</td>
+            <td>Onsite</td>
+        </tr>
+
+        <tr align="char">
+            <td>Software Tester</td>
+            <td>25000</td>
+            <td>Onsite</td>
+        </tr>
+    
+    </table>
+    <br>
+    <br>  
+
+
+    <form autocomplete="on" enctype="multipart/form-data">
+        <fieldset>
+           <br>
+           <legend align="center"><strong>REGISTER</strong></legend>
+           <br>
+
+           <div class="Firstname">
+              <label><strong>FIRST NAME</strong></label>
+              <input type="text" name="name" required>
+           </div>
+           <br>
+           
+           <div class="lastname">
+            <label><strong>LAST NAME</strong></label>
+            <input type="text" name="name" required>
+          </div>
+          <br> 
+
+          <div class="age">
+            <label><strong>AGE</strong></label>(AGE should be greater than 18)
+            <input type="int" name="age" required>
+          </div>
+          <br> 
+
+          <div class="gender">
+            <label><strong>GENDER</strong></label>
+            <input type="radio" name="gender" id="gender" required value="male">Male
+            <input type="radio" name="gender" id="gender" required value="Female">Female
+            <input type="radio" name="gender" id="gender" required value="other">Other
+          </div>
+          <br>  
+
+          <div class="address">
+            <label><strong>ADDRESS</strong></label><br>
+            <textarea name="address" rows="5" cols="50" required></textarea>
+          </div>
+          <br> 
+
+          <div class="lang prof">
+            <label><strong>LANGUAGE PROFICIENCY</strong></label>
+            <select name="lang" required>
+                 <option value="Elementary">select</option>
+                 <option value="Elementary">Elementary</option>
+                 <option value="Limited">Limited</option>
+                 <option value="Professional">Professional</option>
+                 <option value="Fully proficiency">fully proficiency</option>
+                 <option value="Fluent">Fluent</option>
+            </select>
+          </div>
+          <br>  
+
+          <div class="prog lang">
+            <label><strong>KNOWN PROGRAMING LANGUAGE</strong></label><br>
+            <input type="checkbox" name="prog lang" value="c">c<br>
+            <input type="checkbox" name="prog lang" value="c++">c++<br>
+            <input type="checkbox" name="prog lang" value="python">Python<br>
+            <input type="checkbox" name="prog lang" value="java">Java<br>
+            <input type="checkbox" name="prog lang" value="pascal">Pascal<br>
+          </div>
+          <br>
+
+          <div class="dob">
+            <label><strong>DATE OF BIRTH</strong></label>
+            <input type="date" name="dob" required>
+          </div>
+          <br> 
+
+
+          <div class="applicant summary">
+            <label><strong>BRIEF APPLICANT SUMMARY</strong></label><br>
+            <textarea name="applicant summary" rows="5" cols="50" required></textarea>
+          </div>
+          <br> 
+
+          <div class="img">
+            <label><strong>UPLOAD YOUR IMAGE</strong></label>
+            <input type="file" name="IMG" required>
+         </div>
+         <br>
+
+
+         <div class="final" align="center">
+             <input type="submit" name="submit">
+             <input type="reset" name="reset">
+         </div>
+         <br>
+        </fieldset>
+    </form>
+
+    </body>
+</html>
