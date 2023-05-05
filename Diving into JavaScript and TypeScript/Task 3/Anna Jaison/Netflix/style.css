@@ -1,0 +1,325 @@
+body{
+    background: black;
+    color: white;
+    width: 100;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+
+  .header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(41, 25, 25, 0.7)) ,url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+  }
+
+  .logo{
+    width: 150px;
+    cursor: pointer;
+
+  }
+  nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .lang{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px;
+    padding: 7px 10px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    color: white;
+  }
+  .lang img{ 
+    width: 10px;
+    margin-left: 10px;
+  }
+  .header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+  .header-content h1{
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 600px;
+    max-height: 600px;
+    text-align: center;
+    margin: 0;
+  }
+  .header-content h3{
+   font-weight: 400;
+   margin-bottom: 20px;
+  }
+  .signup{
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .signup input{
+    flex: 1;
+    border: 1;
+    outline: 4;
+    margin-left: 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: grey;
+    padding: 15px 30px;
+    font: inherit;
+    color: white;
+    border-radius: 4px;
+  }
+  .signup button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font: bold inherit;
+    border-radius: 4px;
+  }
+
+  .fontawesomeicon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+ }
+
+.Globe::before {
+   font: var(--fa-font-solid);
+    content: ' \f0ac';
+}
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+  .text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  .img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+  .img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  .features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+       
+  }
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.faq .signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+ .faq small{
+    font-size: 15px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+ }
+ .footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid rgb(82, 80, 80);
+    color: gray;
+ }
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: rgb(232, 232, 232);
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer.lang{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .lang{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+     flex-direction: column-reverse;
+    } 
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+}
+    @media only screen and (max-width: 400px){
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.signin{
+    float: right;
+}
+
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background: rgb(82, 81, 81);
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordion .content{
+  background: rgb(65, 64, 64);
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+  
