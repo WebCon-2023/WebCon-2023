@@ -1,0 +1,7 @@
+document.getElementById("body").style.cssText="background-color: aliceblue;height: 100%;"
+document.getElementById("header").style="height: 4rem"
+document.getElementById("img").style="height: 4rem;"
+document.getElementById("input").style.cssText="padding-right:15rem;height: 2rem; margin-top: 15px;color: black;"
+document.getElementById("png").style.cssText= "margin-top: 24px;padding-left: 1rem;"
+document.getElementById("bell").style.cssText="color: #ffffff;margin-left: 15px;margin-top: 24px;padding-right: 1rem;"
+document.getElementById("profile").style.cssText="border-radius: 50%;height: 2rem;"

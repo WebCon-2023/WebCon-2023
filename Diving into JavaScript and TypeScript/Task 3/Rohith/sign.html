@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flicker-Signup</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="img/png" href="assests/flickr (4).png">
+</head>
+
+<body style="background-image: url(https://identity.flickr.com/img/033120190455-by-Henry.2edde7a9.jpg);">
+
+
+    <header class="bg-black " style="height: 4rem;color: white;">
+        <div class="flex justify-start" style="padding-left: 3rem;">
+            <button onclick="location.href = 'index.html';"><img style="padding-left: 3rem; height:4rem" id="log_icon"
+                    src="assests/flickr (1).png" alt="logo"></button>
+
+        </div>
+    </header>
+
+
+    <section class="grid grid-cols-2 gap-4 place-content-center text-center" style="height: 39.5rem;">
+
+        <form id="sign_box" action="Home.html">
+            <img id="sign_img" src="" alt="logo">
+            <p class="text-center" style="font-size: 20px;">Sign up for Flickr</p>
+            <input class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="text" placeholder="First Name"
+                style="border-width: 1px; border-color:black; padding-right: 6rem;" required>
+            <input class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="text" placeholder="Last Name"
+                style="border-width: 1px; border-color:black; padding-right: 6rem;" required>
+            <input class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="text" placeholder="Age"
+                style="border-width: 1px; border-color:black; padding-right: 6rem;" required>
+            <input class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="email" placeholder="Email address"
+                style="border-width: 1px; border-color:black; padding-right: 6rem;" required>
+            <input class="outline-blue-500 h-12 rounded-sm px-3 my-2" type="password" placeholder="Password"
+                style="border-width: 1px; border-color:black; padding-right: 6rem;" required>
+            <button class="bg-blue-500 my-2 text-white rounded-sm px-3 py-1 hover:bg-blue-500"
+                style="height: 2.5rem;font-weight: 550;">Sign up</button>
+            <p class="text-center text-sm" style="color: grey;">By signing up, you agree with Flickr's Terms
+                of<br>Services and Privacy Policy.</p><br>
+            <hr class="my-1"><br>
+            <span class="bottom-10 text-sm text-center">Already a Flickr member? <button
+                    onclick="location.href = 'login.html';" class="cursor-pointer hover:underline">
+                    Log in here.</button></span>
+        </form>
+        <div class="text-white flex justify-between" style="margin-top: 4px;">
+            <div>
+                <a href="#">English</a>
+            </div>
+
+            <div>
+                <a style="padding-left: 10px;" href="#">Help</a>
+                <a style="padding-left: 10px;" href="#">Privacy</a>
+                <a style="padding-left: 10px;" href="#">Terms</a>
+            </div>
+
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="img/png" href="assests/flickr (4).png">
+
+</head>
+
+<body id="body" class="grid items-stretch">
+    <header id="header">
+        <div class="flex justify-around">
+            <button id="logo" onClick="window.location.reload();"><img src="assests/flickr.png" alt="logo"
+                    style="height: 4rem;"></button>
+
+            <input id="input" class="border-none rounded-sm outline-none border-2 px-3 my-2" type="text"
+                placeholder="Photos,peoples,or groups">
+            <div class="flex space-x-4">
+                <button onclick="location.href = 'login.html';">Log In</button>
+                <button id="input_buttn" class="bg-white my-4 text-black rounded-sm px-3 py-1 hover:text-gray-400"
+                    onclick="location.href = 'sign.html';">Sign Up</button>
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <section id="section" class="grid grid-cols-2 gap-4 place-content-center text-center">
+
+        <div>
+            <h1 id="h1"></h1><br>
+        </div>
+        <div>
+            <h2 id="h2"></h2><br>
+        </div>
+        <div>
+            <button id="log_button" class="bg-white my-4 text-black rounded-sm px-3 py-1 hover:text-gray-400"
+                ;></button><br>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="flex justify-evenly mt-4">
+            <a class="hover:underline" href="">About</a>
+            <a class="hover:underline" href="">Jobs</a>
+            <a class="hover:underline" href="">Blob</a>
+            <a class="hover:underline" href="">Developers</a>
+            <a class="hover:underline" href="">Guidlines</a>
+            <a class="hover:underline" href="">Help</a>
+            <a class="hover:underline" href="">Help Forum</a>
+            <a class="hover:underline" href="">Privacy</a>
+            <a class="hover:underline" href="">Terms</a>
+            <a class="hover:underline" href="">Cookies</a>
+            <a class="hover:underline" href="">English</a>
+            <a class="hover:underline" href="">SmugMug+Flickr</a>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

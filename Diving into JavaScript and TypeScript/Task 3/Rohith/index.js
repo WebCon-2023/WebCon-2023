@@ -1,0 +1,16 @@
+document.getElementById("body").style.cssText="height: 100%; background-image: url(https://bit.ly/3H0hzvf);"
+document.getElementById("header").style.cssText="background-color: rgba(0, 0, 0, 0.299); height: 4rem;color: white;"
+//document.getElementById("logo").src="assests\flicker.jpg";
+document.getElementById("logo").style.cssText="height: 4rem;"
+document.getElementById("input").style.cssText="background-color: rgba(255, 255, 255, 0.725); padding-right:50rem;height: 2rem; margin-top: 15px;color: black;"
+document.getElementById("input_buttn").style.cssText="margin-left: 15px;color: black;"
+document.getElementById("section").style.cssText="height: 39.5rem;font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif;"
+document.getElementById("h1").style.cssText="font-weight: 550;font-size: 50px;color: white;"
+document.getElementById("h1").innerHTML="Find your inspiration."
+document.getElementById("h2").style.cssText="font-weight:550;font-size:25px;color: white;"
+document.getElementById("h2").innerHTML="Join the Flickr community, home to tens of billions of<br>photos and 2 million groups."
+document.getElementById("log_button").style.cssText="height: 3.2rem;font-size:20px;font-weight:bold;color: black;"
+document.getElementById("log_button").innerHTML="Start for free"
+document.getElementById("footer").style.cssText=style="height: 3.5rem; background-color: black; color:grey"
+//login page
+//document.getElementById("login_body").style="background-image: url(https://identity.flickr.com/img/033120190455-by-Henry.2edde7a9.jpg);"
