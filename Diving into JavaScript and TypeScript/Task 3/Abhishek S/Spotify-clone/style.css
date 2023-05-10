@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(200deg, #212121, #0d0d0d);
+    color: white;
+}
+
+nav {
+    height: 65px;
+    background-color: #060606;
+    margin-left: 19%;
+    position: fixed;
+    width: 81%;
+    top: 0;
+}
+
+#chevron {
+    margin-left: 2%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#signup {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#login {
+    margin-top: 11px;
+}
+
+.login {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 10%;
+    text-align: center;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.login a {
+    color: black;
+    padding-left: 4.5vh;
+}
+
+.sidebar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 19%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+}
+
+.logo img {
+    width: 55%;
+    margin: 25px 25px 20px 25px;
+}
+
+.upper,
+#middle,
+.lower {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.upper p {
+    margin: 0 9% 0 5%;
+}
+
+#middle {
+    padding-top: 10%;
+}
+
+.middle {
+    margin: 0 5%;
+}
+
+.lower {
+    margin-top: 20%;
+    padding-left: 13%;
+}
+
+.lower p {
+    margin: 0 10%;
+}
+
+.lower a {
+    font-size: 8px;
+}
+
+p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 11%;
+}
+
+i {
+    padding: 10px;
+}
+
+a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: white;
+}
+
+.h1 {
+    margin: 0 0 0 19%;
+    padding-left: 2%;
+    position: relative;
+    top: 90px;
+}
+
+.playlist-1 {
+    margin: 7.5% 2.7% 1.6% 19%;
+    padding-left: 2%;
+    overflow: hidden;
+}
+
+.playlist {
+    margin-left: 19%;
+    padding: 2% 2.4% 1.6% 2.4%;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 3% 0;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 7.5%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5%;
+}
+
+.item,
+.item4,
+.item3 {
+    min-width: 90px;
+    width: 200px;
+    padding: 1%;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    box-sizing: border-box;
+}
+
+.item:hover,
+.item3:hover,
+.item4:hover {
+    background-color: #252525;
+}
+
+.item img,
+.item3 img,
+.item4 img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 19%;
+    height: fit-content;
+    width: 81%;
+    margin-top: 2.4%;
+    padding: 1.5% 1.2% 1.5% 2%;
+    box-sizing: border-box;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.head {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 13%;
+}
+
+.hr {
+    border: 1px solid #333;
+    margin: 2% 3% 2% 21%;
+    border-radius: 5px;
+}
+
+.footer {
+    margin: 2% 13%;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+#logout {
+    display: none;
+    margin: 10% 9% 0 5%;
+    padding: 11%;
+    font-size: 16px;
+}
+
+.container {
+    margin: 7.5% 2.7% 1.6% 19%;
+    padding-left: 2%;
+    overflow: hidden;
+    display: none;
+}
+
+.container h1 {
+    margin-bottom: 3%;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    width: 50%;
+    padding-left: 3%;
+}
+
+.timestamp {
+    margin: 0 26px;
+}
+
+.timestamp i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.songInfo {
+    font-size: 25px;
+    margin-top: 30px;
+    position: absolute;
+    left: 10vw;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    display: none;
+}
+
+.icons {
+    margin: 20px;
+}
+
+.icons i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 35vw;
+    cursor: pointer;
+    height: 2px;
+    margin: 0 20px;
+    flex-grow: 1;
+}
+
+#currentStart {
+    margin: 0px 10px 0px 20px;
+}
+
+#currentEnd {
+    margin: 0px 20px 0px 10px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .playlist-1 {
+        margin: 12% 2.7% 1.6% 19%;
+        padding-left: 2%
+    }
+
+    .upper,
+    #middle {
+        padding-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .upper p,
+    #middle p {
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .upper p,
+    #middle p,
+    #head {
+        font-size: 14px;
+    }
+
+    .item4 {
+        display: none;
+    }
+
+    .company a,
+    .community a,
+    .links a,
+    .social a {
+        font-size: 12px;
+    }
+
+    .communities {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .upper p,
+    #middle p {
+        font-size: 8px;
+    }
+
+    .company {
+        margin-right: 20px;
+    }
+
+    .company a,
+    .community a,
+    .links a,
+    .social a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .upper p,
+    #middle p {
+        font-size: 5px;
+    }
+
+    .item3,
+    .item4 {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
