@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    </head>
+<body>
+   
+   
+        
+        <div class="flex flex-row justify-evenly p-6 bg-white drop-shadow-2xl">
+          <img src="logo.webp" width="100px" margin-left="3%" >
+          <div class="p-5">MEN</div>
+          <div class="p-5">WOMEN</div>
+          <div class="p-5">KIDS</div>
+          <div class="p-5">HOME LIVING</div>
+          <div class="p-5">STUDIO</div>
+          <div class="search-bar">
+            <input class="search p-1 my-2" id="headerInput" placeholder="Search for products,brands and more">
+            <div class="search-submit">
+                <img width="27px" src="searchicon.png">
+            </div>
+        </div>
+          <div class="p-5">Wishlist</div>
+          <div class="p-5">Bag</div>
+    </div>
+    <div class="mainContent m-5">
+        <div class="mainbox">
+            <div class="flex flex-col gap-6 align-middle justify-evenly">
+                <img width="500px" src="offer.png">
+                <div class="welcome-header">
+                Login or Signup
+                </div>
+                <div class="form-grp">
+                    <input type="text" onfocus="this.value=''" id="loginid" class="mobile-input w-80 h-10">
+                    
+                   <!-- <span class="mobileNumberPlacholder" style="color: gray">Mobile Number
+                        <span style="color: rgb(255, 87, 34);">*</span></span>-->
+                </div>
+                <div class="get-help">By continuing, I agree to the Terms of Use & Privacy Policy</div>
+                <div class="submit-button" type="button" onclick="check()">CONTINUE</div>
+                <div class="get-help">Having trouble logging in? Get Help</div>
+    
+            </div>
+        </div>
+        
+    </div>
+    <script src="file.js"></script>
+    
+</body>
