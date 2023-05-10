@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+[ class*="col-"] {
+    width: 100%;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+#menu a:hover {
+    background-color: #eee;
+}
+
+
+/* styles for small screens */
+@media (max-width: 640px) {
+    /* remove padding from container */
+    .container {
+      padding: 0;
+    }
+  
+    /* center and resize the photo */
+    .photo {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    /* center the photo image */
+    .photo1 {
+      margin: 0 auto;
+    }
+  
+    /* center the text and resize the font */
+    .write {
+      text-align: center;
+    }
+  
+    .col-1 {
+      font-size: 2rem;
+    }
+  
+    .col-2 {
+      font-size: 3rem;
+    }
+  
+    .col-3 {
+      font-size: 2rem;
+    }
+  
+    /* center the button */
+    .col-4 {
+      margin: 0 auto;
+    }
+  }
+  
