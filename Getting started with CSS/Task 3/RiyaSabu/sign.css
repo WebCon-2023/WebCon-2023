@@ -1,0 +1,117 @@
+
+*{
+    margin: 10px;
+    padding: 0;
+    font-family:  Helvetica Neue, 'Segoe UI', Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+body{
+
+    overflow: hidden;
+     background-color: #020e1c;
+     color: #fff;
+     position: relative;
+     width: 100%;
+     background-position: center;
+     background-image:
+    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/header-image.png);
+
+      
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* logo left and buttons in right */
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.container{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0,0, 0.5);
+    height: fit-content;
+    width:475px;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    padding: 50px;
+    padding-bottom: 150px;
+}
+.emailinp , .pwdinp{
+    font-size: medium;
+    font-weight: 500;
+    background-color: rgb(35, 35, 35);
+    color: wheat;
+    padding: 15px ;
+    width: 100%;
+    border-radius: 5px;
+    border-style: hidden;
+    
+
+
+
+}
+button{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: #DB0001;
+    color: #fff;
+    padding:  15px 15px ;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius:  4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.rme{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    color: grey;
+    margin-bottom: 50px;
+    
+}
+.rme p{
+    margin-left: 0;
+    margin-right: 70px;
+
+}
+.nn , .rec{
+    color: grey;
+    margin-left: 20px;
+
+}
+.nn a{
+    margin-left: 0;
+}
+.rec{
+    font-size: small;
+}
+
+@media screen and (max-width: 600px){
+    *{
+        background-color: black;
+    }
+    .logo{
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        align-self: start;
+        width: 90%;
+        padding: 0;
+        margin-top: 50px;
+
+    }
+
+    }

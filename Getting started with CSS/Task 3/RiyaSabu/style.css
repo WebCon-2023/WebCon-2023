@@ -1,0 +1,395 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  Helvetica Neue, 'Segoe UI', Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+body{
+     background-color: #020e1c;
+     color: #fff;
+
+      
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    background-image:
+    linear-gradient( rgba(4, 4, 32, 0.7), rgba(7, 16, 26, 0.7)),
+    url(images/header-image.png);
+   
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* logo left and buttons in right */
+    padding: 10px 0;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #DB0001;
+    color: #fff;
+    padding:  9px 15px ;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius:  4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.langbtn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent ;
+    border: 1px solid grey;
+    font-weight: 300;
+    padding: 5px 10px;
+    font-size: medium;
+}
+
+.img1{
+    width: 22px;
+    margin-right: 10px;
+    margin-left: 1px;
+}
+.img2{
+    width: 10px;
+    margin-right: 3px;
+    margin-left: 10px;
+
+}
+
+.content-main{
+    padding: 20px;
+    padding-top: 100px;
+
+    top: 50%;
+
+}
+
+.content-main h1{
+    font-size: 65px;
+    line-height: 80px;
+    max-width: 1150px;
+    font-weight: 800;
+   
+    
+
+}
+.content-main h3{
+    font-weight:500;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    font-size: 25px;
+
+
+}
+.box{
+    background-image: linear-gradient(to bottom right, red,blue);
+    padding: 4px;
+    border-radius: 6px;
+}
+.box-content{
+    background-color: #021022;
+   overflow: hidden;
+    /* width: 100%; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    
+
+    
+    
+}
+.box-content p{
+    margin-left: 10px;
+}
+.emailinp{
+    font-size: medium;
+    font-weight: 500;
+    max-width: 325px;
+    background-color: rgb(19, 18, 18);
+    padding: 15px ;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-color: grey;
+    
+
+
+
+}
+.email-sigup{
+    border-radius: 5px;
+    display: inline;
+    align-items: center;
+    margin-top: 8px;
+
+}
+
+.email-sigup input{
+    flex: 1;
+    outline: 0;
+    width: 375px;
+    margin-left: 10px;
+    border-style: ridge;
+    border-color: grey;
+}
+
+.email-sigup button{
+    align-items: center;
+    background-color: #DB0001;
+   
+    border-radius: 8px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 5px;
+    padding: 15px 20px;
+
+}
+.features{
+    margin-top: -10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(8, 3, 43);
+    
+height:fit-content;
+position:absolute;
+
+    padding: 5px 12%;
+    font-size: 22px;
+}
+.line-1 {
+    height: 1px;
+    background: grey;
+  }
+.row{
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.text-col h2{
+    font-size: xxx-large;
+
+}
+.text-col p{
+    margin-top: 20px;
+    font-size: large;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.faq{
+    padding: 10px ;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1600px;
+
+}
+.accordion{
+    margin: 15px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+}
+.accordion li label{
+    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #072951;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.2s;
+}
+input[type ="radio"]{
+    display: none;
+}
+.accordion .content{
+    font-size: medium;
+    background-color: #072951;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+.accordion input[type ="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type ="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.box-content2{
+    align-items: center;
+    background-color: #020e1c;
+
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+@media screen and (max-width: 820px){
+    
+
+.footer .col {
+    display:block;
+    text-decoration: none;
+    color: #777;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+    .faq{
+        margin-left: 20px;
+        margin-top: 2300px;
+    }
+    
+
+    .features{
+        margin-top: 10%;
+        height: fit-content;
+        
+    }
+   
+    .logo{
+        width: 80px;
+    }
+    .content-main h1{
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .content-main h3{
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    .box-content p{
+        margin-left: 0px;
+        font-size: medium;
+        margin-bottom: 10px;
+
+    }
+    .img-col img{
+        width: 353px;
+        
+    }
+    .email-sigup input{
+        width: 180px;
+        
+    }
+    .email-sigup button{
+        font-size: medium;
+        font-weight: bold;
+        padding: 10px;
+        
+        border-radius: 4px;
+    }
+    .row{
+        margin-top: 10px;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "text-col " "img-col";
+    }
+    .text-col h2{
+        margin-left: 0;
+        font-size: xx-large;
+    }
+    .text-col p{
+        font-size: medium;
+    }
+    .text-col{
+        grid-area: text-col;
+        width: 100%;
+        margin-top: 0;
+    }
+    .img-col img{
+        width: 100%;
+        margin-top: auto;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 400px){
+
+}
+
