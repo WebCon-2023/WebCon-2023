@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+#Model-X {
+    height: 109vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#Model-S {
+    background-image: url(Images/Homepage/Model-S-homepage-desktop.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#Model-3 {
+    background-image: url(Images/Homepage/Homepage-Model-3-Desktop-LHD.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#Model-X {
+    background-image: url(Images/Homepage/Homepage-Model-X-Desktop-LHD.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#Model-Y {
+    background-image: url(Images/Homepage/Homepage-Model-Y-Global-Desktop.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+nav {
+    position: relative;
+    bottom: 4vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 2s;
+    
+}
+
+.options {
+    flex: 1;
+    text-align: center;
+    padding-left: 7.5rem;
+}
+
+.options li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.options li a {
+    text-decoration: none;
+    color: black;
+}
+
+#Shop, #Account, #Menu {
+    text-decoration: none;
+    color: black;
+    z-index: 0;
+}
+
+.Order-Now, .Test-Drive, .Order-Now1, .Test-Drive1 {
+    display: inline;
+    margin: 10px;
+    height:2.5rem;
+    width: 18rem;
+    position: relative;
+    top: 50vh;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.Buttons {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.Order-Now, .Order-Now1 {
+    background-color: rgba(23, 26, 32, 0.8);
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.Test-Drive, .Test-Drive1 {
+    background-color: rgba(244, 244, 244, 0.65);
+    backdrop-filter: blur(8px);
+    color: black;
+}
+
+.Order-Now1, .Test-Drive1 {
+    position: relative;
+    top: 60vh;
+}
+
+.logo {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    top: 5vh;
+    left: 4vh;
+    z-index: 1;
+    animation: fadeIn 2s;
+}
+
+section .content {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+section a {
+    color: inherit;
+}
+
+p {
+    margin: 0;
+} 
+
+.content-new {
+    position: relative;
+    top: 9vh;
+}
+
+.B-New {
+    position: relative;
+    top: 65vh;
+}
+
+.a-hov {
+    height: 1rem;
+    width: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.a-hov:hover {
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+} 
+
+aside {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 240px;
+    background-color: #fff;
+    padding: 50px 40px;
+    z-index: 4;
+    height: 100vh;
+    overflow: scroll;
+}
+
+aside button.close {
+    font-size: 32px;
+    border: 0;
+    height: 1em;
+    background-color: transparent;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
+}
+
+.Menu {
+    padding: 10px;
+    margin-top: 10px;
+    height: 0.5rem;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+
+.Menu:hover {
+    border-radius: 1px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.close:hover {
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.anim {
+    opacity: 0;
+    transition: opacity 0.75s ease-in;
+}
+
+.anim.appear {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    #Model-S {
+        background-image: url(Images/Homepage/Model-S-homepage-mobile.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #Model-3 {
+        background-image: url(Images/Homepage/Homepage-Model-3-LHD-Mobile.png);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #Model-X {
+        background-image: url(Images/Homepage/Homepage-Model-X-Mobile-LHD-v2-412.png);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #Model-Y {
+        background-image: url(Images/Homepage/Homepage-ModelY-LHD-Mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .a-hide {
+        display: none;
+    }
+
+    .Menu>a{
+        text-decoration: none;
+    }
+
+    .Order-Now, .Test-Drive, .Order-Now1, .Test-Drive1 {
+        display: inline;
+        margin: 10px;
+        height:2.5rem;
+        width: 18rem;
+        position: relative;
+        top: 50vh;
+        border: 0;
+        border-radius: 3px;
+    }
+
+    .B-New {
+        position: relative;
+        top: 65vh;
+    }
+
+    #Menu {
+        border-radius: 1px;
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: 0 0 0 6px rgba(0,0,0,0.1);
+        position: relative;
+        top: 1vh;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    #Account, #Shop {
+        color: black;
+    }
+
+    .logo {
+        position: relative;
+        top: 5vh;
+    }
+
+    #Menu {
+        position: relative;
+        top: -0.5vh;
+    }
+}
