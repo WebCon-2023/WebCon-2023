@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" type="text/css" href="hola.css">
+    
+    
+    <style>
+		.tooltip {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted black;
+			cursor: help;
+		}
+
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -60px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
+		}
+	</style>
+    <script src="profile.js"></script>
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <h1>Add Profile</h1>
+            <h4>Add a profile for another person watching Netflix.</h4>
+            <div class="smallcontainer">
+                <div class="image">
+                    <img src="images/04.jpg" style="width: 100%; height: auto;">
+                </div>
+                <div class="container3">
+                    <div class="smallest">
+                        <label class="Name"></label>
+                        <input  type="text" id="Name" placeholder="Name">
+                        
+                        <div class="child">
+                            <input type="checkbox" id="add-kids-profile">
+                            
+                            <span class="tooltip">Child?<span class="tooltiptext">If selected, this profile will only see TV shows and movies rated for ages 12 and under.</span></span>
+                        </div>
+                        
+        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <button class="addIcon"><a href="#" onclick="navigateTothirdPage()">Continue</a></button>
+            <script>
+                function navigateTothirdPage() {
+                  // Navigate to the second page
+                  window.location.href = "profile.html";
+                }
+            </script>
+            <button class="cancel">Cancel</button>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
