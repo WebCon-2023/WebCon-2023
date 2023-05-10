@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats | Food Delivery and Takeout | Order Online from Restaurants Near You</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./images/icon.png">
+</head>
+<body> 
+<div class="first" >
+    <div class="headerWrapper">
+    <header class="" >
+        <div class="header" id="headerContainer">
+            <button class="btn">
+                <svg class="btn-svg" aria-hidden="true" focusable="false"  viewBox="0 0 20 20" width="24px" height="24px" >
+                    <path class="svg-path" d="M19.167 3.333H.833v2.5h18.334v-2.5zm0 5.834H.833v2.5h18.334v-2.5zM.833 15h18.334v2.5H.833V15z">
+
+                    </path>
+                </svg>
+            </button>
+            <section class="spacer_32"></section>
+            <a href="./" class="activeImage">
+                <img src="./images/uberEatsText.svg" alt="" srcset="">
+            </a>
+
+            <div class="spacer_128"></div>
+            <div class="inputTextInner boxShadowClass hidden topSearchBar" >
+                <div class="locationIconOuter">
+                    <div class="locationIconInner">
+                        <svg class="locationIcon" width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" fill="currentColor">
+
+                            </path>
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="spacer_16"></div>
+
+
+
+                <input type="text" id="address" placeholder="Enter delivery address" class="textBoxInput topSearchBarInner">
+                <div class="spacer_8"></div>
+                <div class="transformBanner"></div>
+            </div>
+            <div class="transformBanner"></div>
+            <div class="cust-spacer bp"></div>
+            <a href="./" class="login-icon">
+                <svg class="login-svg" aria-hidden="true" focusable="false" viewBox="0 0 26 26">
+                    <path fill-rule="evenodd" cliprule="evenodd" d="M18.958 7.042a5.958 5.958 0 11-11.916 0 5.958 5.958 0 0111.916 0zM3.25 21.667c0-3.575 2.925-6.5 6.5-6.5h6.5c3.575 0 6.5 2.925 6.5 6.5v3.25H3.25v-3.25z"></path>
+
+                </svg>
+                <div class="spacer_4"></div>
+                Log in
+            </a>
+            <div class="spacer_16"></div>
+            <a href="./" class="signup">
+                Sign up
+            </a>
+
+
+        </div>
+    </header>
+    </div>
+    <section class="searchBarHeader">
+        <h1 class="headingText">
+            Order food to your door
+        </h1>
+
+        <div class="searchBarContainer">
+            <div class="inputText">
+                <div class="inputTextInner boxShadowClass" id="inputTextInner">
+                    <div class="locationIconOuter">
+                        <div class="locationIconInner">
+                            <svg class="locationIcon" width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" fill="currentColor">
+
+                                </path>
+
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spacer_16"></div>
+
+
+
+                    <input type="text" id="address" placeholder="Enter delivery address" class="textBoxInput">
+                    <div class="spacer_8"></div>
+                </div>
+            </div>
+            <div class="spacer_8"></div>
+            <div class="deliverContainer">
+                <div class="deliverWrapper">
+                <div class="deliverContainerInner">
+                    <div class="spacer_4"></div>
+                    <div class="clockIcon">
+                        <div class="clockIconSvg">
+                            <svg width="24px" height="24px" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 24 24">
+                                <path d="M12 2.83398C6.91671 2.83398 2.83337 6.91732 2.83337 12.0007C2.83337 17.084 6.91671 21.1673 12 21.1673C17.0834 21.1673 21.1667 17.084 21.1667 12.0007C21.1667 6.91732 17.0834 2.83398 12 2.83398ZM17 13.6673H10.3334V5.33398H12.8334V11.1673H17V13.6673Z" fill="#000000"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="deliverText">
+                        <div class="deliverTextContent deliverTextInner">Deliver Now</div>
+                    </div>
+                    <div class="spacer_4"></div>
+                    <div class="dropDown">
+                        <div class="dropDownInner">
+                            <svg class="dropDownSvg" onclick="show()"width="24px" height="24px" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M17 11.7494V14.916L12 11.0827L7 14.916V11.7494L12 7.91602L17 11.7494Z" transform="rotate(180, 12, 12)" fill="#000000" height="24px" width="24px"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spacer_8"></div>
+                    <div class="spacer_8"></div>
+                </div>
+                </div>
+                <div class="dropDownList">
+                    <div class="dropDowndeliverNow">
+                        <button class="dDeliverNow hoverList">
+                            <div class="dClockIcon roundSvg">
+                                <div class="dClockIconWrapper roundSvg">
+                                    <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path d="M12 2.83398C6.91671 2.83398 2.83337 6.91732 2.83337 12.0007C2.83337 17.084 6.91671 21.1673 12 21.1673C17.0834 21.1673 21.1667 17.084 21.1667 12.0007C21.1667 6.91732 17.0834 2.83398 12 2.83398ZM17 13.6673H10.3334V5.33398H12.8334V11.1673H17V13.6673Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="spacer_8"></div>
+                            <div class="dDeliverTextNow">Deliver now</div>
+
+                        </button>
+                    </div>
+                    <button class="scheduleLater hoverList">
+                        <div class="calendarIconInner roundSvg">
+                            <div class="calendarIconWrapper roundSvg">
+                                <svg class="calendarIcon" fill="none" width="20px" height="20px" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M21.1666 8.66732V5.33398H18.6666V2.83398H16.1666V5.33398H7.83325V2.83398H5.33325V5.33398H2.83325V8.66732H21.1666ZM21.1666 21.1673H2.83325V10.334H21.1666V21.1673ZM8.66658 13.6673H6.16658V16.1673H8.66658V13.6673Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                        <div class="spacer_8"></div>
+                        <div class="scheduleLaterText">Schedule for later</div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="spacer_8"></div>
+            <button class="findbtn">
+                Find food
+            </button>
+
+
+
+
+        </div>
+
+
+</section>
+</div>
+
+<!-- <main class="second">
+        <article class="mainContent">
+            <section class="createAcc">
+                <div class="imageWrapper">
+                    <img src="./images/image1.png" alt="image">
+                </div>
+            </section>
+            
+        </article>
+</main> -->
+    <script src="./index.js"></script>
+</body>
+</html>
