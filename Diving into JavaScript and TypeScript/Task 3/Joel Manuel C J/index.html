@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    </head>
+    <body>
+        <h1 class="text-3xl font-sans h-16 bg-black text-gray-50 py-3 px-14">Uber</h1>
+        <div class="flex justify-center">
+        <div class="flex flex-col w-96 self-center py-40 gap-4 px-5">
+            <h1 class="text-2xl font-sans" style=" font-weight: 450;">What's your phone number or email?</h1>
+            <div id="err1">
+            <input type="text" onfocus="this.value=''"  id="loginid" class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 p-4 outline-offset-1">
+            </div>
+            <button class="text-lg w-80 font-sans h-12 rounded-lg bg-black text-gray-50 hovering1" onclick="check();">Continue</button>
+            
+            <div class="flex flex-row space-x-3">
+                <hr class="w-36 my-3" style="height:2px;border-width:0;color:gray;background-color:gray">
+                <p> or</p>
+                <hr class="w-36 my-3" style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+            <button class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 hovering2">
+                <div class="flex flex-row justify-center">
+                <img src="images/google.png" width="50px">
+                <p class="text-lg font-sans py-2">
+                Continue with Google
+                </p>
+                </div>
+            </button>
+            <button class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 hovering2">
+                <div class="flex flex-row justify-center">
+                <img src="images/apple.png" width="40px">
+                <p class="text-lg font-sans py-2">
+                Continue with Apple
+                </p>
+                </div>
+            </button>
+            <button class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 hovering2">
+                <div class="flex flex-row justify-center">
+                <img src="images/facebook.png" width="50px">
+                <p class="text-lg font-sans py-2">
+                Continue with Facebook
+                </p>
+                </div>
+            </button>
+            <p class="text-xs w-72 font-sans h-12" style=" font-weight: 350;">
+            By proceeding, you consent to get calls, WhatsApp or SMS messages, including by automated means, from Uber and its affiliates to the number provided.
+            </p>
+            <br>
+            <p class="text-xs w-80 font-sans h-12" style=" font-weight: 350;">
+                This site is protected by reCAPTCHA and the Google<a href="https://policies.google.com/privacy" class="font-medium underline"> Privacy Policy </a> and <a href="https://policies.google.com/terms" class="font-medium underline">Terms of Service</a> apply.
+            </p>
+        </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+    
+</html>

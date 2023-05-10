@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="landing.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="flex flex-row bg-black">
+            <h1 class="flex flex-row space-x-10 text-3xl font-sans h-16  text-gray-50 py-3 px-80">
+                <p>Uber                          </p>
+                <div class="text-xl" style="cursor:pointer">
+                    Ride
+                </div>
+                <div class="text-xl" style="cursor:pointer">
+                    Drive
+                </div>
+                <div class="text-xl" style="cursor:pointer">
+                    More
+                </div>
+            </h1>
+            <h1 class="flex flex-row space-x-8 text-3xl font-sans h-16  text-gray-50 py-3 px-80">
+                <div class="text-xl" style="cursor:pointer">
+                    Help
+                </div>
+                <div class="text-xl" style="cursor:pointer">
+                    Joel
+                </div>
+            </h1>
+        </div>
+        <div class="flex px-80 py-20 ">
+            <div class="flex flex-col w-96 self-center py-6 gap-6 px-5 bg-gray-100 rounded-lg">
+                <h1 class="text-4xl font-sans" style=" font-weight: 600;">Where can we pick you up?</h1>
+                <input type="text" onfocus="this.value=''" id="from" class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 p-4 outline-offset-1">
+                <input type="text" onfocus="this.value=''" id="to" class="text-lg w-80 font-sans h-12 rounded-lg bg-gray-200 p-4 outline-offset-1">
+                <button class="text-sm font-medium w-40 font-sans h-12 rounded-full bg-gray-200 hovering2">
+                    Leave now
+                </button>
+                <button class="text-sm font-medium w-80 font-sans h-12 text-left hovering2 px-4">
+                    <h1 class="text-base font-semibold">Allow location access </h1>
+                    <h1 class="font-light">For perfect pickup experience</h1>
+                </button>
+                <button class="text-sm font-medium w-80 font-sans h-12 text-left hovering2 px-4">
+                    <h1 class="text-base font-semibold">Set map location </h1>
+                </button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <script src="landing.js"></script>
+    </body>
+</html>

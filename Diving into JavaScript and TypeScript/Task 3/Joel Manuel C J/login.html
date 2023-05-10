@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1 class="text-3xl font-sans h-16 bg-black text-gray-50 py-3 px-14">Uber</h1>
+        <div class="flex justify-center">
+            <div class="flex flex-col w-96 self-center py-64 gap-6 px-5">
+                <h1 class="text-2xl font-sans" style=" font-weight: 450;">Welcome back, Joel.</h1>
+                <div class="flex flex-row place-content-between">
+                <input type="text" onfocus="this.value=''" id="password" class="text-lg w-80 font-sans h-12 rounded-l-lg bg-gray-200 p-4 outline-offset-1">
+                <button class="h-12 bg-gray-200 rounded-r-lg" onclick="toggle()">
+                    <i class="fa fa-eye" id="eye" style="font-size:24px"></i>
+                </button>
+                </div>
+                <button class="text-sm font-medium w-28 font-sans h-10 rounded-full bg-gray-200 hovering2" onclick="otp_generation()">More options</button>
+                <button class="text-sm font-medium w-40 font-sans h-10 rounded-full bg-gray-200 hovering2" onclick="otp_generation()">I forgot my password</button>
+                <div class="flex flex-row place-content-between">
+                    <button class="text-sm font-medium w-12 font-sans h-12 rounded-full bg-gray-200 hovering2" onclick="otp_page()">
+                        <i class="fa fa-arrow-left" style="font-size:20px"></i>
+                    </button>
+                    <button class="text-sm font-medium w-24 font-sans h-12 rounded-full bg-gray-200 hovering1" onclick="next_page()">
+                        <div class="flex flex-row place-content-center space-x-1">
+                        <p class="text-lg font-sans py-2 font-thin text-gray-400">
+                            Next
+                        </p>
+                        <i class="fa fa-arrow-right py-3" style="font-size:20px; color:#9CA3AF; font-weight: 100;"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
