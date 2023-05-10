@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Varela&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(12, 1, 2);
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 186px;
+    padding: 0 8px;
+
+}
+.about a{
+    color:white;
+    text-decoration: none;
+}
+.login a{
+    text-decoration: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: rgb(234, 152, 152);
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('./images/download.jpg');
+   background-size: 1000px;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 90px;
+    background-color: rgb(17, 16, 16);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+form{
+    max-width:550px;
+    width:90%;
+    background: rgb(205, 215, 215);
+    margin:15px auto;
+    padding:30px;
+    border-radius:3px;
+    box-sizing:border-box;
+}
+label{
+    display:block;
+    margin:15px 0;
+}
+.two{
+    cursor: pointer;
+    margin:15px 0;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 30px;
+    border: 1px solid #737570;
+    padding: 10px;
+}
+.two:hover{
+    background:rgb(168, 162, 162);
+}
+.image{
+    width:100px;
+    
+}
+.remember{
+    padding:5px;
+}
+.remember input{
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+input[type="submit"]{
+    padding:5px;
+    margin-top: 30px;
+    width:90%;
+    background-color: rgb(229, 218, 218);
+    max-width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;;
+}
+input[type="submit"]:hover{
+    background: green;
+}
+.error{
+    color:red;
+}
+#Success{
+    color: green;
+}
+.center{
+    text-align: center;
+}
+#password,#email{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.icons{
+    margin-top: 6px; 
+}
+.icons i{
+    padding: 3px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    margin-top: 15px;
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: rgb(66, 59, 59);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 26px;
+}
+
+.timestamp i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.songInfo{
+    font-size: 25px;
+    margin-top: 30px;
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(64, 57, 57);
+    }
+  }
