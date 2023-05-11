@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-JOZcJmyEkdR8XaWxkcFT+3m3C/xDm+hPPo10ihHZZ48vG2SwcEoRucX8MnMDMf1N7RGU6Y5uV8WU6nNvLY7BZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Spotify</title>
+    </head>
+    <body>
+
+      <div class="sidebar">
+        <div class="logo">
+          <a href="#">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+          </a>
+        </div>
+  
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="fa fa-home"></span>
+                <span>Home</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#">
+                <span class="fa fa-search"></span>
+                <span>Search</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#">
+                <span class="fa fas fa-book"></span>
+                <span>Your Library</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="fa fas fa-plus-square"></span>
+                <span>Create Playlist</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#">
+                <span class="fa fas fa-heart"></span>
+                <span>Liked Songs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="policies">
+          <ul>
+            <li><a href="#">Cookies</li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">About Ads</a></li>  
+          </ul>
+          
+        </div>
+      </div>
+      <!--main container-->
+      <div class="main-container">
+        <div class="topbar">
+          <div class="prev-next-buttons">
+            <button type="button" class="fa fas fa-chevron-left"></button>
+            <button type="button" class="fa fas fa-chevron-right"></button>
+          </div>
+          <div class="navbar">
+            <button class="sign-up">Upgrade</button>
+            <button type="button" class="login">
+              <i class="fa-solid fa-user fa-2xs"></i>
+              <span class="chan">Chandana</span>
+            </button>
+          </div>
+        </div>
+        <div class="now-playing-bar">
+          <footer class="footer-1">
+            <div class="play-contents">
+              <div class="album">
+                <div class="album-1">
+                  <div class="album-cover">
+                    <img src="ps-2 cover.jpg" class="album-play"/>
+                  </div>
+                  <div class="album-name">
+                    <div class="song-name"><span>Aga Naga</span></div>
+                    <div class="song-author"><span>A.R.Rahman,Shaktisr..</span></div>
+                  </div>
+                  <button type="button" class="like" >
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="play-button">
+                <div class="player-controls">
+                  <div class="player-control-buttons">
+                    <div class="player-controls-left">
+                      <div class="shuffle">
+                        <button class="shuffle-1"><i class="fa-solid fa-shuffle fa-lg"></i></button>
+                      </div>
+                      <div class="previous">
+                        <button class="previous-1"><i class="fa-sharp fa-solid fa-backward-step fa-lg"></i></button>
+                      </div>
+                    </div>
+                    <div class="pause">
+                        <audio id="audio">
+                            <source src="Aga-Naga-MassTamilan.dev.mp3" type="audio/mpeg">
+                        </audio>
+                        <button class="pause-1"><i class="fa-solid fa-pause fa-xl" id="playButton" ></i></button>
+                    </div>
+                    <div class="player-controls-right">
+                      <div class="previous">
+                        <button class="previous-2"><i class="fa-solid fa-forward-step fa-lg"></i></button>
+                      </div>
+                      <div class="repeat">
+                        <button class="repeat-1"><i class="fa-solid fa-repeat fa-lg"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="player-control-bar">
+                  <div class="playback-time">
+                    <span>0:10</span>
+                  </div>
+                  <div class="progress"></div>
+                  <div class="playback-time-1">
+                    <span>3:17</span>
+                  </div>
+                </div>
+              </div>
+              <div class="options">
+                <button class="vol"><i class="fa fa-volume-up" style="font-size:24px"></i></button>
+                <div class="progress-1"></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="profile-top">
+          <div class="profile-details">
+            <div class="profile-pic-div"><button class="profile-pic"><img src="spotify-profile.jpg" class="profile-pic-1"/></button></div>
+            <div class="profile-name">
+              <div class="profile"><span>Profile</span></div>
+              <div class="chandana">
+                <h1>Chandana</h1>
+              </div>
+              <div class="myplaylists">
+                <span>9 public playlists</span>
+                <div class="dot"></div>
+                <span>19 following</span>
+               
+              </div>
+
+            </div>
+          </div>
+          <div class="main-content-below">
+            <div class="heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg>
+              <div class="top-artists">
+                <h2>Top artists this month</h2>
+                <h6>Only visible to you</h6>
+              </div>
+              
+            </div>
+            <div class="spotify-playlists">
+              <div class="list">
+                <div class="item">
+                  <img src="miley cyrus.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Miley Cyrus</h4>
+                  <p>Endless Summer Vacation</p>
+                </div>
+                <div class="item">
+                  <img src="Starboy.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Weeknd</h4>
+                  <p> Starboy </p>
+                </div>
+                <div class="item">
+                  <img src="Charlie puth.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Charlie Puth</h4>
+                  <p>See You Again(feat.Charli...</p>
+                </div>
+                <div class="item">
+                  <img src="Taylor swift.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Taylor Swift</h4>
+                  <p>Red (Taylor's version)</p>
+                </div>
+                <hr>
+              </div>
+              
+            </div>
+            <div class="heading-2">
+              <div class="top-artists">
+                <h2>Top tracks this month</h2>
+                <h6>Only visible to you</h6>
+              </div>
+              
+            </div>
+            <div class="top-tracks">
+              <div class="list-1">
+                <div class="item-1">
+                  <div class="number">
+                    <button class="number-button"><h5>1</h5></button>
+                  </div>
+                  <div class="album-cover">
+                    <img src="jersey.jpg" class="album-play"/>
+                  </div>
+                  <div class="album-name-1">
+                    <div class="song-name"><span>One Last Time</span></div>
+                    <div class="song-author"><span>One Last Time</span></div>
+                  </div>
+                  <div class="movie">
+                    <h6>Jersey train station bgm</h6>
+                  </div>
+                  <button type="button" class="like like-1" >
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  
+
+                </div>
+                <div class="item-1">
+                  <div class="number">
+                    <button class="number-button"><h5>2</h5></button>
+                  </div>
+                  <div class="album-cover">
+                    <img src="ps-2 cover.jpg"class="album-play"/>
+                  </div>
+                  <div class="album-name-1">
+                    <div class="song-name"><span>Aga Naga</span></div>
+                    <div class="song-author"><span>A R Rahman,Shakthisree Gopalan</span></div>
+                  </div>
+                  <div class="movie">
+                    <h6>PS 2 (Original motion...</h6>
+                  </div>
+                  <button type="button" class="like like-1" >
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  
+
+                </div>
+                <div class="item-1">
+                  <div class="number">
+                    <button class="number-button"><h5>3</h5></button>
+                  </div>
+                  <div class="album-cover">
+                    <img src="DADA.jpg" class="album-play"/>
+                  </div>
+                  <div class="album-name-1">
+                    <div class="song-name"><span>Pogathey</span></div>
+                    <div class="song-author"><span>Jen Martin</span></div>
+                  </div>
+                  <div class="movie">
+                    <h6>DADA (original motion..</h6>
+                  </div>
+                  <button type="button" class="like like-1" >
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  
+
+                </div>
+                <div class="item-1">
+                  <div class="number">
+                    <button class="number-button"><h5>4</h5></button>
+                  </div>
+                  <div class="album-cover">
+                    <img src="fuzi kaze.jpg" class="album-play"/>
+                  </div>
+                  <div class="album-name-1">
+                    <div class="song-name"><span>Shinunoga E-wa</span></div>
+                    <div class="song-author"><span>Fujii Kaze</span></div>
+                  </div>
+                  <div class="movie">
+                    <h6>Help ever hurt never</h6>
+                  </div>
+                  <button type="button" class="like like-1" >
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  
+
+                </div>
+              
+              </div>
+              
+            </div>
+            <div class="heading">
+              &nbsp;
+              &nbsp;
+              <div class="top-artists">
+                <h2>Public playlists</h2>
+              </div>
+              
+            </div>
+            <div class="spotify-playlists">
+              
+              <div class="list">
+                <div class="item">
+                  <img src="2010.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>All Out 2010's</h4>
+                  <p>The biggest songs of 2010s</p>
+                </div>
+                <div class="item">
+                  <img src="post malone.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Today's Top Hits</h4>
+                  <p>Post Malone is on top of the Hottest 50!</p>
+                </div>
+                <div class="item">
+                  <img src="rap caviar.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>RapCaviar</h4>
+                  <p>New music from NLE Choppa, Ice Spice and Fivi...</p>
+                </div>
+                <div class="item">
+                  <img src="rock classics.jpg"/>
+                  <div class="play">
+                    <span class="fa fa-play"></span>
+                  </div>
+                  <h4>Rock Classics</h4>
+                  <p>Rock legends & epic songs that continue to inspire...</p>
+                </div>
+                <hr>
+              </div>
+              
+            </div>
+            <div class="heading">
+              &nbsp;
+              &nbsp;
+              <div class="top-artists">
+                &nbsp;<h2>Following</h2>
+              </div>
+              
+            </div>
+            <div class="spotify-playlists">
+              <div class="list">
+                <div class="item">
+                  <img src="Taylor swift.jpg"/>
+                  
+                  <h4>Taylor swift</h4>
+                  
+                </div>
+                <div class="item">
+                  <img src="Selena gomez.jpg"/>
+                  
+                  <h4>Selena Gomez</h4>
+                  
+                </div>
+                <div class="item">
+                  <img src="A.R RAhman.jpg"/>
+                  
+                  <h4>A.R.Rahman</h4>
+                  
+                </div>
+                <div class="item">
+                  <img src="Sid sreeram.jpg"/>
+                  
+                  <h4>Sid Sriram</h4>
+                  
+                </div>
+                <hr>
+              </div>
+              
+            </div>
+
+  
+          
+
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>Company</h6>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">For the Record</a></li>
+                  
+                  
+  
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Communities</h6>
+                <ul>
+                  <li><a href="#">For Artists</a></li>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Vendors</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Useful Links</h6>
+                <ul>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Free Mobile App</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 social-media">
+                <h6>Social Media</h6>
+                <ul class="social">
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="spotify-2023">
+              <ul><i class="fa-regular fa-copyright fa-2xs"></i>&nbsp;2023 Spotify AB</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+     
+    
+      
+  
+
+
+  
+      <script
+        src="https://kit.fontawesome.com/23cecef777.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="app.js"></script>
+    </body>
+
+</html>
