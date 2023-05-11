@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center text-black bg-white">
+      <div class="pt-5">
+        <img  class="h-16 w-16 inline-block " src="img/spotify-round-black-icon.svg" alt="">
+        <span class="inline-block">
+          <h1 class="text-4xl font-bold">spotify</h1>
+        </span>
+      </div>
+      <h2 class="font-bold text-3xl pt-10">Sign up for free to start listening</h2>
+      <div class="flex flex-col">
+       <div class="px-28">
+        <a
+        href="https://www.facebook.com/login.php?skip_api_login=1&api_key=174829003346&kid_directed_site=0&app_id=174829003346&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fclient_id%3D174829003346%26state%3DAQAo%252FFNq0Pi6SnFunNorwr3cdLrgoZJNhveExNbhxKYwoymsTRI6PTGXaou%252BPOJLaYlLuUVYlU%252BVhtqp4o61zbiJkyklRNJKikltl6B9VGgjXl1SNRYnbRn33%252FG%252BWRbg1mgO7KG1GzXZqIsWfWadJHo3kQTsBDv%252B29ulHQ3p%252F89Cm3XboZLWRUhud%252B0FL2QojdfNr7LEhSiHYjWvzXHJX16CKIgT%252BJyA7%252BmLLgXC%252FTs3iah%252BszpYpTNXd8Hq8X1OKBtSJIJojn7XuYpgcraKUnx9eMlfW3Jpk00vY3oqwlaEXiYuY%252BRQojhCh8Xru0K7IQHM7UCbXY9Vkdc2UwRJ54eSEHtm%26redirect_uri%3Dhttps%253A%252F%252Faccounts.spotify.com%252Flogin%252Ffacebook%252Fredirect%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D5f0a8510-c601-4687-a58e-fb1a5cdb3346%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Ffacebook%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DAQAo%252FFNq0Pi6SnFunNorwr3cdLrgoZJNhveExNbhxKYwoymsTRI6PTGXaou%252BPOJLaYlLuUVYlU%252BVhtqp4o61zbiJkyklRNJKikltl6B9VGgjXl1SNRYnbRn33%252FG%252BWRbg1mgO7KG1GzXZqIsWfWadJHo3kQTsBDv%252B29ulHQ3p%252F89Cm3XboZLWRUhud%252B0FL2QojdfNr7LEhSiHYjWvzXHJX16CKIgT%252BJyA7%252BmLLgXC%252FTs3iah%252BszpYpTNXd8Hq8X1OKBtSJIJojn7XuYpgcraKUnx9eMlfW3Jpk00vY3oqwlaEXiYuY%252BRQojhCh8Xru0K7IQHM7UCbXY9Vkdc2UwRJ54eSEHtm%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
+        class="rounded-full p text-sm font-bold bg-blue-800 text-white flex justify-center hover:text-base mt-10 mb-5">
+          <span class="py-2">sign-up with Facebook</span>
+        </a>
+       </div>
+        <div class="px-28">
+            <a
+          href="https://www.google.com/"
+          class="rounded-full p text-sm font-bold bg-white text-slate-700 flex justify-center border-solid border-2 border-slate-500 hover:text-base "
+          ><span class="py-2">sign-up with Google </span>
+        </a>
+        </div>
+      <div>
+        <div class="text-center">
+          <span>or</span>
+        </div>
+        <div>
+          <form action="">
+            <fieldset class="flex flex-col justify-center ">
+              <legend>whats ur email</legend>
+              <input
+                class="border-solid border-2 border-slate-500 shadow-md  rounded-md w-full pb-6 h-10 align-text-top "
+                type="text"
+                placeholder="Enter your email"
+                onblur="CheckEmail(event)"/>
+
+              <legend class="">password</legend>
+              <input
+                type="password"
+                placeholder="Enter you password"
+                onblur="CheckPass(event)"
+                class=" border-solid border-2 border-slate-500 rounded-md  pb-6 h-10 align-text-top"/>
+
+              <legend class="">what shoui we call u</legend>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                onblur="CheckName(event)"
+                class=" border-solid border-2 border-slate-500 rounded-md  pb-6 h-10 align-text-top jus"
+              />
+
+              <div class="">
+                <legend>date of birth?</legend>
+                <div class="flex gap-4 bg-white">
+                  <div>
+                    <select name="" id="" class="text-black w-24 border-solid border-2 border-slate-500 rounded-md">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <input type="text" placeholder="DD" class="border-solid border-2 border-slate-500 rounded-md" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="YYYY" class="border-solid border-2 border-slate-500 rounded-md" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <legend>what is ur gender</legend>
+                <div class=" grid grid-cols-4">
+                    <div>
+                        <input type="checkbox" class="inline-block col-span-1">
+                        <span>Male</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inline-block">
+                        <span>female</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inline-block">
+                        <span>Non-binary</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inline-block">
+                        <span>others</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inline-block">
+                        <span>dont know</span>
+                    </div>
+                </div>
+                <div class="pt-12">
+                    <input type="checkbox" class="inline-block">
+                    <span>Share my registration data with Spotify's content providers for marketing purposes.</span>
+                </div>
+              </div>
+            </form>
+        </div>
+        <div class="pl-52 pt-4">
+            <a
+            href="https://www.youtube.com/watch?v=s9oQRKsROF8"
+            class="rounded-full p text-sm font-bold bg-green-500 text-black flex justify-center hover:text-base  w-52"
+            >
+            <span class="py-2">sing up </span>
+            </a
+          >
+        </div>
+      </div>
+      <div class="pl-52 pt-3">
+        <span class="inline-block">Have an account?</span>
+        <a href="login.html" class="hover:underline">login</a>
+      </div>
+    </div>
+  </body>
+  <script src="./sing.js"></script>
+</html>
