@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.png">
+</head>
+<body class="bg-black text-white relative">
+    <!-- Home Page -->
+    <div class="flex flex-row">
+        <header class="h-screen  flex flex-row-reverse w-[27.59375%] max-[1420px]:w-[12%] max-[1050px]:w-[8%] max-[1000px]:w-[20%] max-[765px]:w-[10%] max-[510px]:hidden">
+            <div class="h-screen w-[275px] p-2 gap-2 flex flex-col max-[1420px]:w-[88px] ">
+                <div class="h-fit w-full max-[770px]:pl-8" >
+                    <img class="w-[30px] h-[30px] cursor-pointer" src="./Icons/icon.png"></img>
+                    
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]" id="Home Btn"><img src="./Icons/estate.svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Home</span></div></div>
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]" id="Explore Btn"><img src="./Icons/archway (1).svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Explore</span></div></div>
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]" id="Settings Btn"><img src="./Icons/icons8-settings.svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Settings</span></div></div>
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]" id="Profile Btn"><img src="./Icons/user.svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Profile</span></div></div>
+                    <div class="h-[50.25px] p-3"><div class="w-[149px] h-[46px] flex flex-row gap-3 cursor-pointer px-3 bg-blue-600 rounded-full py-2 hover:bg-gray-800 max-[1420px]:w-[46.5px]" id="Tweet Btn"><img src="./Icons/pen.svg" alt="" class="pt-1 w-[20px]"> <span class="justify-center text-xl max-[1420px]:hidden">Tweet</span></div></div>
+
+                    
+                </div>
+
+                <div class=" flex flex-col-reverse grow relative">
+                    <div class="flex flex-col-reverse" id="User Panel">
+                    <div class=" flex flex-col-reverse" id="UserBtn"><div class="h-[65px] w-full rounded-full cursor-pointer p-[12px] flex flex-row hover:bg-gray-800 max-[770px]:p-[5px] max-[690px]:flex-row-reverse"><div class="w-[40px] h-[40px] bg-white rounded-full mr-2 self-center max-[690px]:mr-0 overflow-hidden"><img src="./Icons/user.jpg" alt=""></div><span class="usernametag font-bold max-[1420px]:hidden">Username</span></div></div>
+                    <div class="h-[65px] w-[200px] rounded-full cursor-pointer p-[12px]  justify-center bg-gray-800 hover:bg-gray-900 hidden" id="LogoutBtn"> <span class="text-lg self-center">Logout</span></div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <main class="h-screen grow ">
+            <div class="flex flex-row gap-[38px]">
+                <div class="w-[598px]  h-screen relative border-x border-gray-700 max-[510px]:w-screen max-[660px]:w-full ">
+                    <div class="h-fit w-full z-10 absolute bg-black bg-opacity-60 flex flex-col  max-[510px]:bg-opacity-100 max-[510px]:px-2 backdrop-blur-lg">
+
+                        <div class="w-full h-[53px] px-8 flex"><span class="grow self-center text-xl">Home</span></div>
+                        <div class="w-full h-[53px]  flex flex-row" >
+                            <div class="w-1/2 h-full flex justify-center hover:bg-gray-900 cursor-pointer" id="Foryou Tab" ><div class="tablist h-full w-fit flex border-b-4 border-blue-500" id="Foryou Btn"><span class="self-center">For you</span></div></div>
+                            <div class="w-1/2 h-full flex justify-center hover:bg-gray-900 cursor-pointer" id="Stalking Tab" ><div class="tablist h-full w-fit flex" id="Stalking Btn"><span class="self-center">Following</span></div></div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="tabcontent h-screen w-full flex flex-col pt-[96px] overflow-auto scrollbar" id="Foryou Content">
+                        <!-- Tweet Card -->
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Icons/user.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                
+                                <span class="text-gray-500 cursor-text rick">Write something here?</span>
+                                
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/image.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/grin.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/list-ul.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/location-point.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/schedule.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson1.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatTechGuy</span>
+                                <span>Will These AI Take Our Job</span>
+                                <img class="w-full h-[336px]  rounded-md" src="./Images/RandomTwt1.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson2.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatCelebrityGuy</span>
+                                <span>"Just got my hands on the new ride and I am LOVING it! Thanks to my amazing team for hooking me up with the latest and greatest. Can't wait to hit the road and show this baby off 🚗💨 #newcar #blessed #grateful"</span>
+                                <img class="w-full h-[336px]  rounded-md mt-3" src="./Images/RandomTwt2.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson3.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatInfluencer</span>
+                                <span>A great Morning</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt3.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson4.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatOnwer</span>
+                                <span>Me waiting for my life to take off like that rocket, but instead it crashes and burns 🔥🚀😩 #failedmission #disappointed #backtorealityg</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt4.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer mb-20' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson5.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">Whoami</span>
+                                <span>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. Don't let the fear of failure hold you back from achieving your dreams. Remember, every successful person has failed at some point, but they didn't let their failures define them. They used them as stepping stones to get to where they are today. So take risks, embrace your failures, learn from your mistakes, and keep moving forward. The road to success is not easy, but it's worth it.</span>
+
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="tabcontent h-screen w-full hidden flex-col-reverse pt-[96px] overflow-auto scrollbar" id="Stalking Content">
+                        <!-- Tweet Card -->
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson1.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatTechGuy</span>
+                                <span>Will These AI Take Our Job</span>
+                                <img class="w-full h-[336px]  rounded-md" src="./Images/RandomTwt1.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson2.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatCelebrityGuy</span>
+                                <span>"Just got my hands on the new ride and I am LOVING it! Thanks to my amazing team for hooking me up with the latest and greatest. Can't wait to hit the road and show this baby off 🚗💨 #newcar #blessed #grateful"</span>
+                                <img class="w-full h-[336px]  rounded-md mt-3" src="./Images/RandomTwt2.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson3.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatInfluencer</span>
+                                <span>A great Morning</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt3.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson4.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">ThatOnwer</span>
+                                <span>Me waiting for my life to take off like that rocket, but instead it crashes and burns 🔥🚀😩 #failedmission #disappointed #backtorealityg</span>
+                                <img class="w-full h-[336px]  object-cover rounded-md mt-3" src="./Images/RandomTwt4.jpg"></img>
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Profileimages/RandomPerson5.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                <span class="font-bold">Whoami</span>
+                                <span>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. Don't let the fear of failure hold you back from achieving your dreams. Remember, every successful person has failed at some point, but they didn't let their failures define them. They used them as stepping stones to get to where they are today. So take risks, embrace your failures, learn from your mistakes, and keep moving forward. The road to success is not easy, but it's worth it.</span>
+
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/comment.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>9</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/repeat (1).svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>10</span></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/heart-sign.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"><span>28</span></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='h-fit w-full flex flex-row p-3 border-b border-gray-700 cursor-pointer' >
+                            <div class="h-full w-[48px] mr-3">
+                                <img class=" w-[48px] h-[48px] rounded-full" src="./Icons/user.jpg"></img>
+                            </div>
+                            <div class="flex flex-col grow w-[511px]">
+                                
+                                <span class="text-gray-500 cursor-text rick">Write something here?</span>
+                                
+                                <div class="flex flex-row mt-3 gap-3">
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/image.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/grin.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/list-ul.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/location-point.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+                                    <span class="flex flex-row gap-3 text-gray-600"><img src="./Icons/schedule.svg" class="w-[20px] h-[20px] rounded-full hover:bg-gray-800"></span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+
+
+                    </div>
+                    
+                </div>
+                <div class="h-screen w-[350px] max-[1135px]:w-[275px] max-[1000px]:hidden">
+                    <div class="pt-[12px] pb-[64px] h-[438px] flex flex-col gap-2">
+                        <div class="flex px-2 h-[53px]"><input class="grow  h-[42px] self-center rounded-full bg-gray-600 px-3"  type="text" placeholder="Search Twitter"></div>
+                        <div class="h-[280px] w-full  rounded-2xl flex flex-col bg-[#16181C]">
+                            <div class=" w-full p-2"><span class="font-bold text-xl">Who to Follow?</span></div>
+                            <div class="rick h-[72px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 cursor-pointer"><div class='bg-white rounded-full w-[48px] h-[48px] overflow-hidden'><img src="./Icons/AloneMusk.jpg" alt=""></div><div class="font-bold px-4 grow ">AloneMusk</div><div class="w-[78px] h-[32px] bg-white rounded-full px-[16px] self-center justify-center pt-[4px] hover:bg-gray-200 "><span class="text-black">Follow</span></div></div> 
+                            <div class="rick h-[72px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 cursor-pointer"><div class='bg-white rounded-full w-[48px] h-[48px] overflow-hidden'><img src="./Icons/Spacez.jpg" class="h-[48px]" alt=""></div><div class="font-bold px-4 grow ">SpaceZ</div><div class="w-[78px] h-[32px] bg-white rounded-full px-[16px] self-center justify-center pt-[4px] hover:bg-gray-200"><span class="text-black">Follow</span></div></div> 
+                            <div class="rick h-[72px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 cursor-pointer rounded-b-2xl"><div class='bg-white rounded-full w-[48px] h-[48px] overflow-hidden'><img src="./Icons/Herobrine.webp" alt=""></div><div class="font-bold px-4 grow ">Herobrine</div><div class="w-[78px] h-[32px] bg-white rounded-full px-[16px] self-center justify-center pt-[4px] hover:bg-gray-200"><span class="text-black">Follow</span></div></div> 
+
+
+                        </div>
+                        <div class="h-[280px] w-full  rounded-2xl flex flex-col bg-[#16181C]">
+                            <div class=" w-full p-2"><span class="font-bold text-xl">Whats going on?</span></div>
+                            <div class="rick h-[65px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 cursor-pointer"><div class="font-bold px-4 grow  ">#WEBCON-2023</div></div>
+                            <div class="rick h-[65px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 cursor-pointer"><div class="font-bold px-4 grow ">#NewTweeterOwner</div></div>
+                            <div class="rick h-[65px] w-full px-[16px] py-[12px] flex flex-row hover:bg-gray-800 rounded-b-2xl cursor-pointer"><div class="font-bold px-4 grow ">#JustCancelEveryone</div></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="w-screen h-[52.5px] bg-black absolute bottom-0 hidden flex-row max-[510px]:flex">
+        <div class="w-[114.6px] h-full justify-center flex" id="MobileHomeBtn"><img class="w-[26.25px] h-[26.25px] self-center" src="./Icons/archway (1).svg" alt=""></div>
+        <div class="rick w-[114.5px] h-full justify-center flex hover:cursor-pointer"><img class="w-[26.25px] h-[26.25px] self-center" src="./Icons/ellipsis-h.svg" alt=""></div>
+        <div class="rick w-[114.5px] h-full justify-center flex hover:cursor-pointer"><img class="w-[26.25px] h-[26.25px] self-center" src="./Icons/icons8-settings.svg" alt=""></div>
+        <div class="w-[114.5px] h-full justify-center flex" id="MobileProfileBtn"><img class="w-[26.25px] h-[26.25px] self-center" src="./Icons/user.svg" alt=""></div>
+
+    </div>
+    
+
+    <!-- Signup Page -->
+    
+
+
+
+</body>
+<script src="./Js/Home.js"></script>
+</html>
